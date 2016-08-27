@@ -32,6 +32,9 @@
     <room>rooms\roomMain</room>
     <room>rooms\roomTitle</room>
   </rooms>
+  <constants number="1">
+    <constant name="MAX_BOUNCES">10</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

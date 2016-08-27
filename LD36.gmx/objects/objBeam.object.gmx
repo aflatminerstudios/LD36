@@ -31,8 +31,7 @@ length = 1;
 width = 2;
 dir = 0;
 focused = false;
-
-growing = true;
+bounces = 0;
 
 x2 = x;
 y2 = y;
@@ -40,6 +39,9 @@ y2 = y;
 collLens = noone;
 collMirror = noone;
 collEnemy = noone;
+
+needsDestruction = false;
+isActive = false;
 </string>
           </argument>
         </arguments>
@@ -62,30 +64,60 @@ collEnemy = noone;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Destroy the instance if necessary
+
+if(needsDestruction)
+    instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Grow and check for collisions
 
-while (growing == true) {
-  length++;
-  
-  x2 = x + cos(degtorad(dir)) * length;
-  y2 = y - sin(degtorad(dir)) * length;
-  
-  collLens = collision_line(x, y, x2, y2, objLens, true, true);
-  collMirror = collision_line(x, y, x2, y2, objMirror, true, true);
-  collEnemy = collision_line(x, y, x2, y2, objEnemy, true, true);
-  
-  if (collLens != noone) {
-    scrBeamLens(self.id, collLens);
-    break; 
-  } else if (collMirror != noone) {
-    scrBeamMirror(self.id, collMirror);
-    break;
-  } else if (collEnemy != noone &amp;&amp; focused) {
-    scrBeamEnemy(self.id, collEnemy);
-    break;
-  } else if (x2 &gt; room_width || y2 &gt; room_height || x2 &lt; 0 || y2 &lt; 0) {
-    growing = false;
-  }
+if(isActive) {
+    length = 1;
+    
+    while (true) {
+      length += 1;
+      
+      x2 = x + cos(degtorad(dir)) * length;
+      y2 = y - sin(degtorad(dir)) * length;
+      
+      collLens = collision_line(x, y, x2, y2, objLens, true, true);
+      collMirror = collision_line(x, y, x2, y2, objMirror, true, true);
+      collEnemy = collision_line(x, y, x2, y2, objEnemy, true, true);
+      
+      if (collLens != noone) {
+        scrBeamLens(self.id, collLens, focused, bounces);
+        break; 
+      } else if (collMirror != noone) {
+        scrBeamMirror(self.id, collMirror, focused, bounces);
+        break;
+      } else if (collEnemy != noone &amp;&amp; focused) {
+        scrBeamEnemy(self.id, collEnemy, focused, bounces);
+        break;
+      } else if (x2 &gt; room_width || y2 &gt; room_height || x2 &lt; 0 || y2 &lt; 0) {
+        break;
+      }
+    }
+    
+    needsDestruction = true;
 }
 </string>
           </argument>
@@ -107,7 +139,10 @@ while (growing == true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>/// Set isActive to true
+
+isActive = true;
+</string>
           </argument>
         </arguments>
       </action>
