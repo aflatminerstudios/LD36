@@ -6,5 +6,5 @@ health -= damage;
 
 if (health <= 0) {
   show_message("You lose, game over!");
-  room_goto(roomTitle);
+  scrGameOver();
 }

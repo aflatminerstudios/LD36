@@ -30,6 +30,10 @@
     <script>scripts\scrCalcMouseDist.gml</script>
     <script>scripts\scrDamagePlayer.gml</script>
     <script>scripts\scrCheckList.gml</script>
+    <script>scripts\scrEndRound.gml</script>
+    <script>scripts\scrGameOver.gml</script>
+    <script>scripts\scrSetupLevel.gml</script>
+    <script>scripts\scrStartRound.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>

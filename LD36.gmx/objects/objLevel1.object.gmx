@@ -36,7 +36,7 @@ lensY[2] = 200;
 lensAngle[2] = 0;
 lensRange[2] = 60;
 
-lensX[1] = 180;
+lensX[1] = 400;
 lensY[1] = 480;
 lensAngle[1] = 60;
 lensRange[1] = 60;
@@ -53,7 +53,7 @@ mirrorY[1] = 200;
 mirrorAngle[1] = 0;
 mirrorRange[1] = 90;
 
-mirrorX[0] = 128;
+mirrorX[0] = 110;
 mirrorY[0] = 512;
 mirrorAngle[0] = 0;
 mirrorRange[0] = 180;
