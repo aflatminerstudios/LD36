@@ -17,8 +17,11 @@ if (diff > 90 && diff < -90) {
 }
 
 //if(ds_list_find_index(bounceList, mirror) == -1) {
-if (scrCheckList(bounceList) && !back) {
-  var newBeam = instance_create(pos[0], pos[1], objBeam);
+if (scrCheckList(bounceList,mirror) && !back) {
+  var xPos = pos[0] - cos(degtorad(dir));
+  var yPos = pos[1] + sin(degtorad(dir));
+
+  var newBeam = instance_create(xPos, yPos, objBeam);
   
   newBeam.length = 1;
   newBeam.width = 4;

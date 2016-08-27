@@ -1,6 +1,7 @@
 ///scrCheckList(bounceList)
 
 var bounceList = argument0;
+var object = argument1;
 
 if (ds_list_empty(bounceList)) {
   return true;
@@ -11,6 +12,10 @@ var last = ds_list_find_value(bounceList, size -1);
 
 //If there is a stop beam object at the end of the list
 if (last == "Stop") {
+  return false;
+}
+
+if (last == object) {
   return false;
 }
 
