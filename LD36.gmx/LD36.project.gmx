@@ -6,9 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprMirror</sprite>
-    <sprite>sprites\sprLens</sprite>
     <sprite>sprites\sprShip</sprite>
+    <sprites name="MirrorsAndLenses">
+      <sprite>sprites\sprLens</sprite>
+      <sprite>sprites\sprLensHandle</sprite>
+      <sprite>sprites\sprMirror</sprite>
+      <sprite>sprites\sprMirrorHandle</sprite>
+      <sprite>sprites\sprMirrorHolder</sprite>
+      <sprite>sprites\sprLensHolder</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -21,11 +27,17 @@
     <script>scripts\scrBeamEnemy.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\objLens</object>
-    <object>objects\objMirror</object>
     <object>objects\objEnemy</object>
     <object>objects\objShip</object>
     <object>objects\objBeam</object>
+    <objects name="LensesAndMirrors">
+      <object>objects\objLensHolder</object>
+      <object>objects\objMirrorHolder</object>
+      <object>objects\objLensHandle</object>
+      <object>objects\objLens</object>
+      <object>objects\objMirrorHandle</object>
+      <object>objects\objMirror</object>
+    </objects>
     <object>objects\objMasterControl</object>
   </objects>
   <rooms name="rooms">
