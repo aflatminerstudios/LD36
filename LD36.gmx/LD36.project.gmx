@@ -5,9 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprMirror</sprite>
+    <sprite>sprites\sprLens</sprite>
+    <sprite>sprites\sprShip</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bgMap</background>
+    <background>background\bgTitle</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\objLens</object>
+    <object>objects\objMirror</object>
+    <object>objects\objEnemy</object>
+    <object>objects\objShip</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
     <room>rooms\roomTitle</room>
