@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,52 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Basic setup
+            <string>///Go to game
 
-//Set background
-background = bgMap;
-
-//Initialize lenses (in reverse order)
-lensX[2] = 350;
-lensY[2] = 200;
-lensAngle[2] = 0;
-lensRange[2] = 60;
-
-lensX[1] = 180;
-lensY[1] = 480;
-lensAngle[1] = 60;
-lensRange[1] = 60;
-
-lensX[0] = 290;
-lensY[0] = 600;
-lensAngle[0] = 120;
-lensRange[0] = 60;
-
-
-//Initialize mirrors (in reverse order)
-mirrorX[1] = 218;
-mirrorY[1] = 200;
-mirrorAngle[1] = 0;
-mirrorRange[1] = 90;
-
-mirrorX[0] = 128;
-mirrorY[0] = 512;
-mirrorAngle[0] = 0;
-mirrorRange[0] = 180;
-
-
-//Initialize beams (reverse order, of course)
-beamsX[1] = 210;
-beamsY[1] = 0;
-beamsDir[1] = 270;
-
-beamsX[0] = 100;
-beamsY[0] = 0;
-beamsDir[0] = 270;
-
-
-//Initialize round timelines (in reverse order)
-timeline[0] = tlL1R1;
+if (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any)) {
+  room_goto(roomMain);
+}
 </string>
           </argument>
         </arguments>

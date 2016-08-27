@@ -33,6 +33,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
+    <object>objects\objTitleControl</object>
     <object>objects\objShip</object>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">
@@ -51,8 +52,8 @@
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\roomMain</room>
     <room>rooms\roomTitle</room>
+    <room>rooms\roomMain</room>
   </rooms>
   <constants number="1">
     <constant name="MIN_SUBLENGTH">5</constant>
