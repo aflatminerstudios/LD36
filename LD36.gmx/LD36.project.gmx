@@ -18,6 +18,7 @@
   <scripts name="scripts">
     <script>scripts\scrBeamMirror.gml</script>
     <script>scripts\scrBeamLens.gml</script>
+    <script>scripts\scrBeamEnemy.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objLens</object>

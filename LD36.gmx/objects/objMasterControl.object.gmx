@@ -27,7 +27,15 @@
             <kind>1</kind>
             <string>///TEMP:  Create initial outside beam
 
-var b = instance_create(10, 0, objBeam);
+var b = instance_create(64, 0, objBeam);
+
+b.length = 1;
+b.width = 4;
+b.dir = 270;
+b.focused = false;
+
+
+var b = instance_create(200, 0, objBeam);
 
 b.length = 1;
 b.width = 4;

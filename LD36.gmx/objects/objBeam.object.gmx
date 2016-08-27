@@ -33,6 +33,9 @@ dir = 0;
 focused = false;
 
 growing = true;
+
+x2 = x;
+y2 = y;
 </string>
           </argument>
         </arguments>
@@ -55,10 +58,26 @@ growing = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Grow
+            <string>///Grow and check for collisions
 
 if (growing) {
   length++;
+  
+  x2 = x + cos(degtorad(dir)) * length;
+  y2 = y - sin(degtorad(dir)) * length;
+  
+  var collLens = collision_line(x, y, x2, y2, objLens, true, true);
+  var collMirror = collision_line(x, y, x2, y2, objMirror, true, true);
+  var collEnemy = collision_line(x, y, x2, y2, objEnemy, true, true);
+   
+  if (collLens != noone) {
+    scrBeamLens(self.id, collLens);
+  } else if (collMirror != noone) {
+    scrBeamMirror(self.id, collMirror);
+  } else if (collEnemy) {
+    scrBeamEnemy(self.id, collEnemy);
+  }
+  
 }
 </string>
           </argument>
@@ -90,13 +109,9 @@ if (focused) {
   color = c_yellow;
 }
 
-
-
-var x2 = x + cos(degtorad(dir)) * length;
-var y2 = y - sin(degtorad(dir)) * length;
-
-
 draw_line_width_color(x, y, x2, y2, width, color, color);
+
+
 </string>
           </argument>
         </arguments>

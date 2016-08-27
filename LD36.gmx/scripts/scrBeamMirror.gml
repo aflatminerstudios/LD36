@@ -3,6 +3,8 @@
 var beam = argument0;
 var mirror = argument1;
 
+show_debug_message("beam-Mirror Collide");
+
 beam.growing = false;
 
 var newBeam = instance_create(mirror.x, mirror.y, objBeam);

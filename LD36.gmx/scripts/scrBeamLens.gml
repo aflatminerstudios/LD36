@@ -1,7 +1,9 @@
 ///scrBeamMirror(beam, lens)
 
+show_debug_message("beam-Lens Collide");
+
 var beam = argument0;
-var mirror = argument1;
+var lens = argument1;
 
 beam.growing = false;
 
