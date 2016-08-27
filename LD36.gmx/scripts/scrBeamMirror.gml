@@ -17,11 +17,16 @@ if (diff > 90 && diff < -90) {
 }
 
 //if(ds_list_find_index(bounceList, mirror) == -1) {
-if (scrCheckList(bounceList)) {
-  var newBeam = instance_create(mirror.x, mirror.y, objBeam);
+if (scrCheckList(bounceList) && !back) {
+  var newBeam = instance_create(pos[0], pos[1], objBeam);
   
   newBeam.length = 1;
   newBeam.width = 4;
+  
+  var xDiff = pos[0] - mirror.x;
+  var yDiff = pos[1] - mirror.y;
+  var distToMiddle = sqrt((xDiff * xDiff) + (yDiff * yDiff));
+  
   newBeam.dir = mirror.image_angle;//dir - (sign(diff) * 90);
   newBeam.focused = focused;
   newBeam.damage = damage;
