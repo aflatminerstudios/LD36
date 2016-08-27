@@ -54,6 +54,7 @@ lens.parent = self.id;
             <kind>1</kind>
             <string>///Initialize
 initialImageAngle = 0;
+range = 90;
 </string>
           </argument>
         </arguments>

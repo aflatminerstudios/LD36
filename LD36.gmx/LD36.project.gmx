@@ -45,7 +45,11 @@
       <object>objects\objHandleParent</object>
     </objects>
     <object>objects\objMasterControl</object>
+    <object>objects\objLevel1</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tlL1R1</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
     <room>rooms\roomTitle</room>
