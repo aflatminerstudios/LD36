@@ -30,9 +30,14 @@
 hp = 100;
 value = 100;
 
-moveSpeed = 1;
-moveEnd = 544;
+//Move variables
+moveSpeedX = -1;
+moveSpeedY = 0;
+moveEndX = 544;
+moveEndY = 0;
 
+
+//Attack variables
 attackBegin = 600;
 attackValue = 5;
 
@@ -85,10 +90,26 @@ scrDamagePlayer(attackValue);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Move to the left until a certain spot
+            <string>///Move until a certain spot
 
-if (x &gt; moveEnd &amp;&amp; !place_meeting(x - moveSpeed, y, objEnemy)) {
-  x -= moveSpeed;
+if (moveSpeedX &lt; 0) {
+  if (x &gt; moveEndX &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+    x += moveSpeedX;
+  }
+} else {
+  if (x &lt; moveEndX &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+   x += moveSpeedX;
+  }
+}
+
+if (moveSpeedY &lt; 0) {
+  if (y &gt; moveEndY &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+    y += moveSpeedY;
+  }
+} else {
+  if (y &lt; moveEndY &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+    y += moveSpeedY;
+  }
 }
 </string>
           </argument>
