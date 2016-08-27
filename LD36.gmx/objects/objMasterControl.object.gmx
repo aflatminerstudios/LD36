@@ -33,6 +33,7 @@ b.length = 1;
 b.width = 4;
 b.dir = 270;
 b.focused = false;
+b.bounceList = ds_list_create();
 
 
 var b = instance_create(200, 0, objBeam);
@@ -41,6 +42,7 @@ b.length = 1;
 b.width = 4;
 b.dir = 270;
 b.focused = false;
+b.bounceList = ds_list_create();
 </string>
           </argument>
         </arguments>
