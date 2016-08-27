@@ -36,6 +36,8 @@ growing = true;
 
 x2 = x;
 y2 = y;
+
+collLens = noone;
 </string>
           </argument>
         </arguments>
@@ -60,13 +62,13 @@ y2 = y;
             <kind>1</kind>
             <string>///Grow and check for collisions
 
-if (growing) {
+while (growing) {
   length++;
   
   x2 = x + cos(degtorad(dir)) * length;
   y2 = y - sin(degtorad(dir)) * length;
   
-  var collLens = collision_line(x, y, x2, y2, objLens, true, true);
+  collLens = collision_line(x, y, x2, y2, objLens, true, true);
   var collMirror = collision_line(x, y, x2, y2, objMirror, true, true);
   var collEnemy = collision_line(x, y, x2, y2, objEnemy, true, true);
    
@@ -74,7 +76,7 @@ if (growing) {
     scrBeamLens(self.id, collLens);
   } else if (collMirror != noone) {
     scrBeamMirror(self.id, collMirror);
-  } else if (collEnemy) {
+  } else if (collEnemy != noone &amp;&amp; focused) {
     scrBeamEnemy(self.id, collEnemy);
   }
   
