@@ -31,40 +31,40 @@
 background = bgMap;
 
 //Initialize lenses (in reverse order)
-lensX[2] = 300;
-lensY[2] = 100;
-lensAngle[2] = 270;
+lensX[2] = 350;
+lensY[2] = 200;
+lensAngle[2] = 0;
 lensRange[2] = 60;
 
 lensX[1] = 180;
 lensY[1] = 350;
-lensAngle[1] = 0;
+lensAngle[1] = 60;
 lensRange[1] = 60;
 
 lensX[0] = 290;
 lensY[0] = 640;
-lensAngle[0] = 0;
+lensAngle[0] = 120;
 lensRange[0] = 60;
 
 
 //Initialize mirrors (in reverse order)
 mirrorX[1] = 218;
 mirrorY[1] = 200;
-mirrorAngle[1] = 25;
+mirrorAngle[1] = 0;
 mirrorRange[1] = 90;
 
-mirrorX[0] = 64;
+mirrorX[0] = 128;
 mirrorY[0] = 512;
 mirrorAngle[0] = 290;
 mirrorRange[0] = 90;
 
 
 //Initialize beams (reverse order, of course)
-beamsX[1] = 220;
+beamsX[1] = 210;
 beamsY[1] = 0;
 beamsDir[1] = 270;
 
-beamsX[0] = 64;
+beamsX[0] = 128;
 beamsY[0] = 0;
 beamsDir[0] = 270;
 
