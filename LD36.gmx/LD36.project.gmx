@@ -28,6 +28,7 @@
       <script>scripts\scrBeamLens.gml</script>
     </scripts>
     <script>scripts\scrCalcMouseDist.gml</script>
+    <script>scripts\scrDamagePlayer.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
