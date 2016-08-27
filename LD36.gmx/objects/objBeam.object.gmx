@@ -31,7 +31,7 @@ length = 1;
 width = 2;
 dir = 0;
 focused = false;
-bounces = 0;
+damage = 5;
 
 x2 = x;
 y2 = y;
@@ -106,13 +106,13 @@ if(isActive) {
       collEnemy = collision_line(x, y, x2, y2, objEnemy, true, true);
       
       if (collLens != noone) {
-        scrBeamLens(self.id, collLens, focused, bounces, bounceList);
+        scrBeamLens(self.id, collLens, focused, damage, bounceList);
         break; 
       } else if (collMirror != noone) {
-        scrBeamMirror(self.id, collMirror, focused, bounces, bounceList);
+        scrBeamMirror(self.id, collMirror, focused, damage, bounceList);
         break;
       } else if (collEnemy != noone &amp;&amp; focused) {
-        scrBeamEnemy(self.id, collEnemy, focused, bounces, bounceList);
+        scrBeamEnemy(self.id, collEnemy, focused, damage, bounceList);
         break;
       } else if (x2 &gt; room_width || y2 &gt; room_height || x2 &lt; 0 || y2 &lt; 0) {
         break;
