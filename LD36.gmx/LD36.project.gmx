@@ -15,11 +15,18 @@
     <background>background\bgTitle</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scrBeamMirror.gml</script>
+    <script>scripts\scrBeamLens.gml</script>
+    <script>scripts\scrBeamEnemy.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\objLens</object>
     <object>objects\objMirror</object>
     <object>objects\objEnemy</object>
     <object>objects\objShip</object>
+    <object>objects\objBeam</object>
+    <object>objects\objMasterControl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
