@@ -10,7 +10,7 @@ var size = ds_list_size(bounceList);
 var last = ds_list_find_value(bounceList, size -1);
 
 //If there is a stop beam object at the end of the list
-if (last.object_index == "Stop") {
+if (last == "Stop") {
   return false;
 }
 

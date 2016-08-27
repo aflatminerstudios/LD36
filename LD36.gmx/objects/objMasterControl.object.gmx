@@ -99,6 +99,15 @@ for (var i = 0; i &lt; array_length_1d(level.mirrorX); ++i) {
   m.image_angle = m.initialImageAngle;
   m.range = level.mirrorRange[i];
 }
+
+
+
+//Start timeline
+timeline_index = level.timeline[0];
+if (!timeline_running) {
+  timeline_index = 0;
+  timeline_running = true;
+}
 </string>
           </argument>
         </arguments>
