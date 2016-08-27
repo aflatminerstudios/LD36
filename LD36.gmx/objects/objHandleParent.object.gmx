@@ -33,6 +33,8 @@ clicked = false;
 
 prevX = -1;
 prevY = -1;
+
+range = 90;
 </string>
           </argument>
         </arguments>
@@ -121,11 +123,11 @@ if (clicked &amp;&amp; parent != noone) {
 
   var diff = parent.image_angle - parent.initialImageAngle;
 
-  if (dist &gt; 1 &amp;&amp; diff &gt; -45) {
+  if (dist &gt; 1 &amp;&amp; diff &gt; (-1 * range / 2)) {
     parent.image_angle -= 2;
     prevX = mouse_x;
     prevY = mouse_y;
-  } else if (dist &lt; -1 &amp;&amp; diff &lt; 45) {
+  } else if (dist &lt; -1 &amp;&amp; diff &lt; (range / 2)) {
     parent.image_angle += 2;
     prevX = mouse_x;
     prevY = mouse_y;

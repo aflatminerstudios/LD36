@@ -28,6 +28,8 @@
             <string>///Initialize variables
 
 score = 0;
+
+health = 100;
 </string>
           </argument>
         </arguments>
@@ -68,6 +70,33 @@ b.width = 4;
 b.dir = 270;
 b.focused = false;
 b.bounceList = ds_list_create();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw health &amp; score
+
+draw_text(50, 50, health);
+
+draw_text(900, 50, score);
 </string>
           </argument>
         </arguments>
