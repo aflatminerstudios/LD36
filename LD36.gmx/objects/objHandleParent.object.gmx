@@ -117,11 +117,10 @@ if (clicked) {
 
 if (clicked &amp;&amp; parent != noone) {
 
-  //TODO: Will want something here to determine drag-direction, etc.
-  var dist = prevY - mouse_y;
+  var dist = scrCalcMouseDist(prevX, prevY, mouse_x, mouse_y, parent.initialImageAngle);
 
   var diff = parent.image_angle - parent.initialImageAngle;
-  show_debug_message(diff);
+
   if (dist &gt; 1 &amp;&amp; diff &gt; -45) {
     parent.image_angle -= 2;
     prevX = mouse_x;
