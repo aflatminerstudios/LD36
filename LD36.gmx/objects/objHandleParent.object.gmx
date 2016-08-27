@@ -90,16 +90,18 @@ if (clicked) {
 
 if (clicked &amp;&amp; parent != noone) {
 
+  var changeAmount = 4;
+
   var dist = scrCalcMouseDist(prevX, prevY, mouse_x, mouse_y, parent.initialImageAngle, clickedAngle);
 
   var diff = angle_difference(parent.image_angle, parent.initialImageAngle);
   
   if (dist &gt; 1 &amp;&amp; diff &gt; (-1 * parent.range / 2)) {
-    parent.image_angle -= 2;
+    parent.image_angle -= changeAmount;
     prevX = mouse_x;
     prevY = mouse_y;
   } else if (dist &lt; -1 &amp;&amp; diff &lt; (parent.range / 2)) {
-    parent.image_angle += 2;
+    parent.image_angle += changeAmount;
     prevX = mouse_x;
     prevY = mouse_y;
   }  
