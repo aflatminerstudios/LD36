@@ -29,6 +29,7 @@
     </scripts>
     <script>scripts\scrCalcMouseDist.gml</script>
     <script>scripts\scrDamagePlayer.gml</script>
+    <script>scripts\scrCheckList.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
@@ -50,7 +51,7 @@
     <room>rooms\roomTitle</room>
   </rooms>
   <constants number="1">
-    <constant name="MAX_BOUNCES">10</constant>
+    <constant name="MIN_SUBLENGTH">5</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

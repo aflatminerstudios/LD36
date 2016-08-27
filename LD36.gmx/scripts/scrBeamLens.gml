@@ -7,7 +7,8 @@ var focused = argument2;
 var damage = argument3;
 var bounceList = argument4;
 
-if(ds_list_find_index(bounceList, lens) == -1) {
+//if(ds_list_find_index(bounceList, lens) == -1) {
+if (scrCheckList(bounceList)) {
   var newBeam = instance_create(lens.x, lens.y, objBeam);
   
   newBeam.length = 1;

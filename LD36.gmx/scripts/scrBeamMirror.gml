@@ -6,7 +6,8 @@ var focused = argument2;
 var damage = argument3;
 var bounceList = argument4;
 
-if(ds_list_find_index(bounceList, mirror) == -1) {
+//if(ds_list_find_index(bounceList, mirror) == -1) {
+if (scrCheckList(bounceList)) {
   var newBeam = instance_create(mirror.x, mirror.y, objBeam);
   
   newBeam.length = 1;
