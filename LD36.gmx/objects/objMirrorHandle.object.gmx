@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objHandleParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Basic setup
+
+//call parent
+event_inherited();
 
 parent = noone;
 </string>
@@ -51,6 +54,10 @@ parent = noone;
           <argument>
             <kind>1</kind>
             <string>///match parent
+
+//call parent class
+event_inherited();
+
 
 if (parent != noone) {
   image_angle = parent.image_angle;

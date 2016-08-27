@@ -29,6 +29,9 @@
 
 handle = instance_create(x, y, objMirrorHandle);
 mirror = instance_create(x, y, objMirror);
+
+handle.parent = self.id;
+mirror.parent = self.id;
 </string>
           </argument>
         </arguments>

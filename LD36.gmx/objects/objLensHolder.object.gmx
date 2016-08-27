@@ -55,7 +55,7 @@ lens.parent = self.id;
           <argument>
             <kind>1</kind>
             <string>/// Spin lens 0.5 degree/second
-image_angle += -1;
+//image_angle += -1;
 </string>
           </argument>
         </arguments>

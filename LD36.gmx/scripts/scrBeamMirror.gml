@@ -6,8 +6,6 @@ var focused = argument2;
 var damage = argument3;
 var bounceList = argument4;
 
-show_debug_message("beam-Mirror Collide");
-
 if(ds_list_find_index(bounceList, mirror) == -1) {
   var newBeam = instance_create(mirror.x, mirror.y, objBeam);
   

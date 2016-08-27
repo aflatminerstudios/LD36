@@ -1,6 +1,5 @@
 ///scrBeamLens(beam, lens, focused, damage, bounceList)
 
-show_debug_message("beam-Lens Collide");
 
 var beam = argument0;
 var lens = argument1;
