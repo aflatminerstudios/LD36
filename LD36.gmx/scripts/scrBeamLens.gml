@@ -19,7 +19,7 @@ if (diff < 90 && diff > -90) {
 }
 
 //if(ds_list_find_index(bounceList, lens) == -1) {
-if (scrCheckList(bounceList)) {
+if (scrCheckList(bounceList, lens)) {
 
   var xPos = pos[0] + cos(degtorad(dir));
   var yPos = pos[1] - sin(degtorad(dir));
@@ -43,4 +43,6 @@ if (scrCheckList(bounceList)) {
   newBeam.damage = damage;
   newBeam.bounceList = bounceList;
   ds_list_add(newBeam.bounceList, lens);
+  
+  show_debug_message("Beam bounce size: " + string(ds_list_size(newBeam.bounceList)));
 }
