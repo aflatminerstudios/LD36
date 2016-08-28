@@ -85,6 +85,7 @@
     <object>objects\objGameOverReport</object>
   </objects>
   <timelines name="timelines">
+    <timeline>timelines\tlL1R2</timeline>
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
