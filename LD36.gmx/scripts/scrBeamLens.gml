@@ -44,5 +44,4 @@ if (scrCheckList(bounceList, lens)) {
   newBeam.bounceList = bounceList;
   ds_list_add(newBeam.bounceList, lens);
   
-  show_debug_message("Beam bounce size: " + string(ds_list_size(newBeam.bounceList)));
 }

@@ -167,7 +167,7 @@ if (roundEnding) {
             <kind>1</kind>
             <string>///Draw health &amp; score
 
-draw_text(50, 50, health);
+draw_text(500, 50, health);
 
 draw_text(900, 50, score);
 </string>
