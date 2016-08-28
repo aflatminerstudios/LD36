@@ -65,6 +65,8 @@
     </objects>
     <object>objects\objMasterControl</object>
     <object>objects\objLevel1</object>
+    <object>objects\objTester</object>
+    <object>objects\objLevelTest</object>
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
@@ -73,6 +75,7 @@
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\roomTest</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
     <room>rooms\roomInstructions</room>
