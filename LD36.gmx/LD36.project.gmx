@@ -15,8 +15,10 @@
       <sprite>sprites\sprMirrorHolder</sprite>
       <sprite>sprites\sprLensHolder</sprite>
     </sprites>
+    <sprite>sprites\sprExplosion</sprite>
     <sprite>sprites\sprFort</sprite>
     <sprite>sprites\sprFortDestroyed</sprite>
+    <sprite>sprites\sprGameOverReport</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -40,12 +42,17 @@
     <script>scripts\scrStartRound.gml</script>
     <script>scripts\scrGameOverCheck.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_large</font>
+    <font>fonts\font_regular</font>
+  </fonts>
   <objects name="objects">
     <object>objects\objEnemy</object>
     <object>objects\objTitleControl</object>
     <object>objects\objInstructionsControl</object>
     <object>objects\objCreditsControl</object>
     <object>objects\objShip</object>
+    <object>objects\objExplosion</object>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">
       <object>objects\objLensHolder</object>
@@ -60,6 +67,7 @@
     <object>objects\objLevel1</object>
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
+    <object>objects\objGameOverReport</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R1</timeline>

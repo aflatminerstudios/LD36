@@ -15,6 +15,7 @@ if (enemy.hp <= 0) {
   score += enemy.value;
 
   with (enemy) {
+    instance_create(x, y, objExplosion);
     instance_destroy();
   }
 }
