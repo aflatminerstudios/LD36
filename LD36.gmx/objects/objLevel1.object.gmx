@@ -35,45 +35,45 @@ background = bgMap;
 lensX[2] = 350;
 lensY[2] = 200;
 lensAngle[2] = 0;
-lensRange[2] = 60;
+lensRange[2] = 90;
 
 lensX[1] = 450;
 lensY[1] = 500;
 lensAngle[1] = 0;
-lensRange[1] = 60;
+lensRange[1] = 90;
 
 lensX[0] = 400;
-lensY[0] = 250;
+lensY[0] = 300;
 lensAngle[0] = 45;
-lensRange[0] = 60;
+lensRange[0] = 90;
 
 
 //Initialize mirrors (in reverse order)
 mirrorX[2] = 330;
 mirrorY[2] = 350;
-mirrorAngle[2] = 320;
-mirrorRange[2] = 90;
+mirrorAngle[2] = 0;
+mirrorRange[2] = 180;
 
 
 mirrorX[1] = 218;
 mirrorY[1] = 200;
 mirrorAngle[1] = 0;
-mirrorRange[1] = 90;
+mirrorRange[1] = 180;
 
 mirrorX[0] = 110;
 mirrorY[0] = 512;
-mirrorAngle[0] = 35;
+mirrorAngle[0] = 0;
 mirrorRange[0] = 180;
 
 
 //Initialize beams (reverse order, of course)
-beamsX[1] = 210;
+beamsX[1] = 350;
 beamsY[1] = 0;
-beamsDir[1] = 270;
+beamsDir[1] = 230;
 
-beamsX[0] = 100;
-beamsY[0] = 0;
-beamsDir[0] = 270;
+beamsX[0] = 185;
+beamsY[0] = 767;
+beamsDir[0] = 110;
 
 //Initialize forts (again, reverse order)
 fortX[4] = 395;

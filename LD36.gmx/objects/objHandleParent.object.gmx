@@ -37,7 +37,6 @@ prevY = -1;
 clickedAngle = 0;
 
 changeAmount = 4;
-show_debug_message(string(self.id) + " - objHandleParent changeAmount: " + string(changeAmount));
 </string>
           </argument>
         </arguments>
