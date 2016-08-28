@@ -108,7 +108,7 @@ if(isActive) {
       pos[0] = x2;
       pos[1] = y2;
       if (collLens != noone) {
-        scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos);
+        scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos, width);
         break; 
       } else if (collMirror != noone) {
         scrBeamMirror(self.id, collMirror, focused, damage, bounceList, dir, pos);
