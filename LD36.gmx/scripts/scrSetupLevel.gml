@@ -48,7 +48,6 @@ with (objMasterControl) {
     f.currentHP = f.maxHP;
   }
     
-  
-  scrStartRound();
-
+  //Start round in 1 second
+  alarm[0] = room_speed;
 }

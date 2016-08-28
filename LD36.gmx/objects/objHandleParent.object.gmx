@@ -96,7 +96,7 @@ if (clicked &amp;&amp; parent != noone) {
 
   var diff = angle_difference(parent.image_angle, parent.initialImageAngle);
   
-  show_debug_message("changeAmount = " + string(changeAmount));
+//  show_debug_message("changeAmount = " + string(changeAmount));
   
   if (dist &gt; 1 &amp;&amp; diff &gt; (-1 * parent.range / 2)) {
     parent.image_angle -= changeAmount;

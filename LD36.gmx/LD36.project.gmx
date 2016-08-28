@@ -39,6 +39,7 @@
     <script>scripts\scrCalcMouseDist.gml</script>
     <script>scripts\scrBasicAttack.gml</script>
     <script>scripts\scrCheckList.gml</script>
+    <script>scripts\scrTargetEnemy.gml</script>
     <script>scripts\scrEndRound.gml</script>
     <script>scripts\scrGameOver.gml</script>
     <script>scripts\scrSetupLevel.gml</script>
