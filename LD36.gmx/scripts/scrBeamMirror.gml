@@ -10,10 +10,10 @@ var pos = argument6;
 
 ///Does it hit the back of the mirror?
 var diff = angle_difference(dir, mirror.image_angle);
-if (diff > 90 || diff < -90) {
-  var back = false;
-} else {
+if (diff > 90 && diff < -90) {
   var back = true;
+} else {
+  var back = false;
 }
 
 //if(ds_list_find_index(bounceList, mirror) == -1) {
