@@ -172,9 +172,7 @@ if (roundEnding) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw health &amp; score
-
-draw_text(500, 50, health);
+            <string>///Draw score
 
 draw_text(900, 50, score);
 </string>
