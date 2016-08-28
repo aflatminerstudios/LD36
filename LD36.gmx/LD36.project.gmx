@@ -19,6 +19,7 @@
     <sprite>sprites\sprFort</sprite>
     <sprite>sprites\sprFortDestroyed</sprite>
     <sprite>sprites\sprGameOverReport</sprite>
+    <sprite>sprites\sprStartButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -68,6 +69,7 @@
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
+    <object>objects\objStartButton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R1</timeline>
