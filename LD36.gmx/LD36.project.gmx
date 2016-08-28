@@ -20,6 +20,8 @@
     <sprite>sprites\sprFortDestroyed</sprite>
     <sprite>sprites\sprGameOverReport</sprite>
     <sprite>sprites\sprStartButton</sprite>
+    <sprite>sprites\sprCreditsButton</sprite>
+    <sprite>sprites\sprInstructionsButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -48,10 +50,19 @@
     <font>fonts\font_regular</font>
   </fonts>
   <objects name="objects">
+    <objects name="Title Screen">
+      <object>objects\objTitleControl</object>
+      <object>objects\objStartButton</object>
+      <object>objects\objCreditsButton</object>
+      <object>objects\objInstructionsButton</object>
+    </objects>
+    <objects name="Credits Screen">
+      <object>objects\objCreditsControl</object>
+    </objects>
+    <objects name="Instructions Screen">
+      <object>objects\objInstructionsControl</object>
+    </objects>
     <object>objects\objEnemy</object>
-    <object>objects\objTitleControl</object>
-    <object>objects\objInstructionsControl</object>
-    <object>objects\objCreditsControl</object>
     <object>objects\objShip</object>
     <object>objects\objExplosion</object>
     <object>objects\objBeam</object>
@@ -69,7 +80,6 @@
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
-    <object>objects\objStartButton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R1</timeline>
