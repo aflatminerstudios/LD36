@@ -10,10 +10,10 @@ var pos = argument6;
 
 ///Does it hit the back of the mirror?
 var diff = angle_difference(dir, mirror.image_angle);
-if (diff > 90 && diff < -90) {
-  var back = true;
-} else {
+if (diff > 90 || diff < -90) {
   var back = false;
+} else {
+  var back = true;
 }
 
 //if(ds_list_find_index(bounceList, mirror) == -1) {
@@ -35,7 +35,11 @@ if (scrCheckList(bounceList,mirror) && !back) {
   var yDiff = pos[1] - mirror.y;
   var distToMiddle = sqrt((xDiff * xDiff) + (yDiff * yDiff));
   
-  newBeam.dir = mirror.image_angle;//dir - (sign(diff) * 90);
+  var reverseAngle = dir - 180;
+  var angleDifference = angle_difference(reverseAngle, mirror.image_angle);
+  var angleOut = reverseAngle - 2*angleDifference;
+  
+  newBeam.dir = angleOut;// mirror.image_angle;//dir - (sign(diff) * 90);
   newBeam.focused = focused;
   newBeam.damage = damage;
   newBeam.bounceList = bounceList;
