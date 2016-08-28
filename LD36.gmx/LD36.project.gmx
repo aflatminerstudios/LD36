@@ -16,6 +16,7 @@
       <sprite>sprites\sprLensHolder</sprite>
     </sprites>
     <sprite>sprites\sprFort</sprite>
+    <sprite>sprites\sprFortDestroyed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -31,12 +32,13 @@
       <script>scripts\scrBeamLens.gml</script>
     </scripts>
     <script>scripts\scrCalcMouseDist.gml</script>
-    <script>scripts\scrDamagePlayer.gml</script>
+    <script>scripts\scrBasicAttack.gml</script>
     <script>scripts\scrCheckList.gml</script>
     <script>scripts\scrEndRound.gml</script>
     <script>scripts\scrGameOver.gml</script>
     <script>scripts\scrSetupLevel.gml</script>
     <script>scripts\scrStartRound.gml</script>
+    <script>scripts\scrGameOverCheck.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
@@ -56,6 +58,8 @@
     </objects>
     <object>objects\objMasterControl</object>
     <object>objects\objLevel1</object>
+    <object>objects\objFort</object>
+    <object>objects\objFortDestroyed</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R1</timeline>

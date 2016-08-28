@@ -12,6 +12,10 @@ with (objMirrorHolder) {
   instance_destroy();
 }
 
+with (objFort) {
+  instance_destroy();
+}
+
 with (objMasterControl) {
   //set background
   background_index = level.background;
@@ -36,7 +40,14 @@ with (objMasterControl) {
     m.image_angle = m.initialImageAngle;
     m.range = level.mirrorRange[i];
   }
-  
+
+  for (var i = 0; i < array_length_1d(level.fortX); ++i) {
+    show_debug_message("Creating fort " + string(i));
+    var f = instance_create(level.fortX[i], level.fortY[i], objFort);
+    f.maxHP = level.fortHP[i];
+    f.currentHP = f.maxHP;
+  }
+    
   
   scrStartRound();
 

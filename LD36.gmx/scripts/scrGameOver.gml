@@ -1,3 +1,5 @@
 ///scrGameOver()
 
-room_goto(roomMain);
+show_message("Game over! You lose!");
+
+room_goto(roomTitle);
