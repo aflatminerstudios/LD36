@@ -37,7 +37,20 @@ if (scrCheckList(bounceList, lens)) {
   
   newBeam.length = 1;
   newBeam.width = 4;
-  if (back) {
+  
+  var diff = lens.image_angle - dir;
+  if (abs(diff) > 180) {
+    var m = max(lens.image_angle, dir);
+    if (m == dir) {
+      dir -= 360;
+    } else { 
+      lens.image_angle -= 360;
+    }
+  }
+  
+  if (back) {    
+    var temp = (lens.image_angle + dir) / 2;  
+    
     newBeam.dir = (lens.image_angle + dir) / 2;
   } else {
     newBeam.dir = ((lens.image_angle + dir + 180) / 2);

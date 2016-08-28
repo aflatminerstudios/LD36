@@ -30,7 +30,8 @@
 //Set background
 background = bgMap;
 
-//Initialize lenses (in reverse order)
+//Initialize lenses 
+//(in reverse order, game maker apparently likes it better if you do it this way)
 lensX[2] = 350;
 lensY[2] = 200;
 lensAngle[2] = 0;
@@ -50,7 +51,7 @@ lensRange[0] = 60;
 //Initialize mirrors (in reverse order)
 mirrorX[2] = 330;
 mirrorY[2] = 350;
-mirrorAngle[2] = 290;
+mirrorAngle[2] = 320;
 mirrorRange[2] = 90;
 
 
@@ -61,7 +62,7 @@ mirrorRange[1] = 90;
 
 mirrorX[0] = 110;
 mirrorY[0] = 512;
-mirrorAngle[0] = 30;
+mirrorAngle[0] = 35;
 mirrorRange[0] = 180;
 
 
