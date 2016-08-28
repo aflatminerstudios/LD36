@@ -110,6 +110,19 @@ if(isActive) {
       var pos;
       pos[0] = x2;
       pos[1] = y2;
+      
+      var size = ds_list_size(bounceList);
+      var last = ds_list_find_value(bounceList, size -1);
+      if (last == collLens) {
+        collLens = noone;
+      }
+      if (last == collMirror) {
+        collMirror = noone;
+      }
+      if (last == collEnemy) {
+        collEnemy = noone;
+      }
+      
       if (collLens != noone) {
         scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos, width, focusNum);
         break; 
