@@ -32,11 +32,12 @@ width = 2;
 dir = 0;
 focused = false;
 damage = 5;
-focusNum = 0;
+focusNum = -1;
 
 
 x2 = x;
 y2 = y;
+
 
 collLens = noone;
 collMirror = noone;
@@ -173,6 +174,8 @@ isActive = true;
             <string>///Draw beam
 
 if (focused) {
+  color = make_color_rgb(255, 153, 153);  
+  draw_line_width_color(x, y, x2, y2, (power(1.5, focusNum) * width), color, color);
   color = c_red;
 } else {
   color = c_yellow;

@@ -57,14 +57,13 @@ if (scrCheckList(bounceList, lens)) {
   var newBeam = instance_create(xPos, yPos, objBeam);
   
   newBeam.length = 1;
-  newBeam.width = 4;
+  newBeam.width = width;
   
   newBeam.dir = newDir;
   
   newBeam.focused = true;
   newBeam.damage = power(1.5, focusNum) * damage;
   newBeam.bounceList = bounceList;
-  newBeam.width = power(1.25, focusNum) * width;
 
   newBeam.focusNum = focusNum + 1;  
     
