@@ -1,4 +1,4 @@
-///scrBeamLens(beam, lens, focused, damage, bounceList, dir)
+///scrBeamLens(beam, lens, focused, damage, bounceList, dir, pos, width, focusNum)
 
 
 var beam = argument0;
@@ -8,6 +8,8 @@ var damage = argument3;
 var bounceList = argument4;
 var dir = argument5;
 var pos = argument6;
+var width = argument7;
+var focusNum = argument8;
 
 ///Does it hit the back of the lens?
 var diff = angle_difference(dir, lens.image_angle);
@@ -55,13 +57,16 @@ if (scrCheckList(bounceList, lens)) {
   var newBeam = instance_create(xPos, yPos, objBeam);
   
   newBeam.length = 1;
-  newBeam.width = 4;
+  newBeam.width = width;
   
   newBeam.dir = newDir;
   
   newBeam.focused = true;
-  newBeam.damage = damage;
+  newBeam.damage = power(1.5, focusNum) * damage;
   newBeam.bounceList = bounceList;
+
+  newBeam.focusNum = focusNum + 1;  
+    
   ds_list_add(newBeam.bounceList, lens);
   
 }

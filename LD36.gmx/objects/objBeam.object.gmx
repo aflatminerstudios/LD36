@@ -32,9 +32,12 @@ width = 2;
 dir = 0;
 focused = false;
 damage = 5;
+focusNum = -1;
+
 
 x2 = x;
 y2 = y;
+
 
 collLens = noone;
 collMirror = noone;
@@ -108,7 +111,7 @@ if(isActive) {
       pos[0] = x2;
       pos[1] = y2;
       if (collLens != noone) {
-        scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos);
+        scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos, width, focusNum);
         break; 
       } else if (collMirror != noone) {
         scrBeamMirror(self.id, collMirror, focused, damage, bounceList, dir, pos);
@@ -171,6 +174,8 @@ isActive = true;
             <string>///Draw beam
 
 if (focused) {
+  color = make_color_rgb(255, 153, 153);  
+  draw_line_width_color(x, y, x2, y2, (power(1.5, focusNum) * width), color, color);
   color = c_red;
 } else {
   color = c_yellow;
