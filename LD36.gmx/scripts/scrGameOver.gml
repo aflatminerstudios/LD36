@@ -1,5 +1,4 @@
 ///scrGameOver()
 
-show_message("Game over! You lose!");
 
-room_goto(roomTitle);
+instance_create(room_width / 2, room_height / 2, objGameOverReport);
