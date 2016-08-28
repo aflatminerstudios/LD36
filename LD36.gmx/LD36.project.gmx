@@ -19,6 +19,8 @@
   <backgrounds name="background">
     <background>background\bgMap</background>
     <background>background\bgTitle</background>
+    <background>background\bgInstructions</background>
+    <background>background\bgCredits</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -38,6 +40,8 @@
   <objects name="objects">
     <object>objects\objEnemy</object>
     <object>objects\objTitleControl</object>
+    <object>objects\objInstructionsControl</object>
+    <object>objects\objCreditsControl</object>
     <object>objects\objShip</object>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">
@@ -58,6 +62,8 @@
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
+    <room>rooms\roomInstructions</room>
+    <room>rooms\roomCredits</room>
   </rooms>
   <constants number="1">
     <constant name="MIN_SUBLENGTH">5</constant>
