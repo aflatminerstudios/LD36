@@ -21,23 +21,7 @@ if (diff < 90 && diff > -90) {
 //if(ds_list_find_index(bounceList, lens) == -1) {
 if (scrCheckList(bounceList, lens)) {
 
-  var xPos = pos[0] + cos(degtorad(dir));
-  var yPos = pos[1] - sin(degtorad(dir));
-  
-  //Continue along line until no more collision
-  while(collision_point(xPos, yPos, objLens, true, false) != noone) {
-    xPos = xPos + cos(degtorad(dir));
-    yPos = yPos - sin(degtorad(dir));
-  }
-
-  xPos = xPos + cos(degtorad(dir));
-  yPos = yPos - sin(degtorad(dir));
-  
-  var newBeam = instance_create(xPos, yPos, objBeam);
-  
-  newBeam.length = 1;
-  newBeam.width = 4;
-  
+  //Handle going across the 0
   var diff = lens.image_angle - dir;
   if (abs(diff) > 180) {
     var m = max(lens.image_angle, dir);
@@ -47,14 +31,34 @@ if (scrCheckList(bounceList, lens)) {
       lens.image_angle -= 360;
     }
   }
-  
+
   if (back) {    
-    var temp = (lens.image_angle + dir) / 2;  
-    
-    newBeam.dir = (lens.image_angle + dir) / 2;
+    var newDir = (lens.image_angle + dir) / 2;  
   } else {
-    newBeam.dir = ((lens.image_angle + dir + 180) / 2);
+    var newDir = ((lens.image_angle + dir + 180) / 2);
   }
+
+  
+
+  var xPos = pos[0] + cos(degtorad(newDir));
+  var yPos = pos[1] - sin(degtorad(newDir));
+  
+  //Continue along line until no more collision
+  while(collision_point(xPos, yPos, objLens, true, false) != noone) {
+    xPos = xPos + cos(degtorad(newDir));
+    yPos = yPos - sin(degtorad(newDir));
+  }
+
+  xPos = xPos + cos(degtorad(newDir));
+  yPos = yPos - sin(degtorad(newDir));
+  
+  var newBeam = instance_create(xPos, yPos, objBeam);
+  
+  newBeam.length = 1;
+  newBeam.width = 4;
+  
+  newBeam.dir = newDir;
+  
   newBeam.focused = true;
   newBeam.damage = damage;
   newBeam.bounceList = bounceList;

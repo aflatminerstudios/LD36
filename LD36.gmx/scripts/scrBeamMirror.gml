@@ -18,9 +18,14 @@ if (diff > 90 && diff < -90) {
 
 //if(ds_list_find_index(bounceList, mirror) == -1) {
 if (scrCheckList(bounceList,mirror) && !back) {
-  var xPos = pos[0] - cos(degtorad(dir));
-  var yPos = pos[1] + sin(degtorad(dir));
+  var xPos = pos[0];// - cos(degtorad(dir));
+  var yPos = pos[1];// + sin(degtorad(dir));
 
+  while(collision_point(xPos, yPos, objMirror, true, false) != noone) {
+    xPos = xPos - cos(degtorad(dir));  
+    yPos = yPos + sin(degtorad(dir));
+  }
+  
   var newBeam = instance_create(xPos, yPos, objBeam);
   
   newBeam.length = 1;
