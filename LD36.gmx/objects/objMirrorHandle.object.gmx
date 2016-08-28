@@ -31,6 +31,10 @@
 event_inherited();
 
 parent = noone;
+
+changeAmount = 2;
+
+show_debug_message(string(self.id) + " - objMirrorHandle changeAmount: " + string(changeAmount));
 </string>
           </argument>
         </arguments>
