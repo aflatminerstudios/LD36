@@ -33,6 +33,7 @@ dir = 0;
 focused = false;
 damage = 5;
 focusNum = -1;
+beamParent = noone;
 
 
 x2 = x;
@@ -111,7 +112,7 @@ if(isActive) {
       pos[0] = x2;
       pos[1] = y2;
       
-      var size = ds_list_size(bounceList);
+      /*var size = ds_list_size(bounceList);
       var last = ds_list_find_value(bounceList, size -1);
       if (last == collLens) {
         collLens = noone;
@@ -121,12 +122,12 @@ if(isActive) {
       }
       if (last == collEnemy) {
         collEnemy = noone;
-      }
+      }*/
       
-      if (collLens != noone) {
+      if (collLens != noone &amp;&amp; collLens != beamParent) {
         scrBeamLens(self.id, collLens, focused, damage, bounceList, dir, pos, width, focusNum);
         break; 
-      } else if (collMirror != noone) {
+      } else if (collMirror != noone &amp;&amp; collMirror != beamParent) {
         scrBeamMirror(self.id, collMirror, focused, damage, bounceList, dir, pos);
         break;
       } else if (collEnemy != noone &amp;&amp; focused) {

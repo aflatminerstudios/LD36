@@ -4,8 +4,9 @@ var beam = argument0;
 var mirror = argument1;
 var focused = argument2;
 var damage = argument3;
-var bounceList = ds_list_create();
-ds_list_copy(bounceList, argument4);
+/*var bounceList = ds_list_create();
+ds_list_copy(bounceList, argument4);*/
+var bounceList = argument4;
 var dir = argument5;
 var pos = argument6;
 
@@ -43,7 +44,8 @@ if (scrCheckList(bounceList,mirror) && !back) {
   newBeam.dir = angleOut;// mirror.image_angle;//dir - (sign(diff) * 90);
   newBeam.focused = focused;
   newBeam.damage = damage;
-
+  newBeam.beamParent = mirror;
+  
   newBeam.bounceList = bounceList;
   ds_list_add(newBeam.bounceList, mirror);
 }

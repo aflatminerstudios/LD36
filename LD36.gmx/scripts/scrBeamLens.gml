@@ -5,8 +5,9 @@ var beam = argument0;
 var lens = argument1;
 var focused = argument2;
 var damage = argument3;
-var bounceList = ds_list_create();
-ds_list_copy(bounceList, argument4);
+/*var bounceList = ds_list_create();
+ds_list_copy(bounceList, argument4);*/
+var bounceList = argument4;
 var dir = argument5;
 var pos = argument6;
 var width = argument7;
@@ -67,6 +68,7 @@ if (scrCheckList(bounceList, lens)) {
 
   newBeam.bounceList = bounceList;
   newBeam.focusNum = focusNum + 1;  
+  newBeam.beamParent = lens;
     
   ds_list_add(newBeam.bounceList, lens);
   
