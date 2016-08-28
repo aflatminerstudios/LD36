@@ -67,7 +67,7 @@ attackSpeed = 0.5;
             <kind>1</kind>
             <string>///Attack - most basic script
 
-scrDamagePlayer(attackValue);
+scrBasicAttack(self.id);
 </string>
           </argument>
         </arguments>
