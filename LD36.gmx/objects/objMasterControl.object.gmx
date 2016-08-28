@@ -33,6 +33,7 @@ health = 10000;
 
 roundEnding = false;
 roundNum = 0;
+levelNum = 0;
 </string>
           </argument>
         </arguments>
@@ -53,9 +54,12 @@ roundNum = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///TEMP: Set to level 1
+            <string>///Levels
 
-level = instance_create(x, y, objLevel1);
+levelObjects[0] = objLevel1;
+
+//TEMP: set to level 1
+level = instance_create(x, y, levelObjects[levelNum]);
 alarm[0] = 1;
 </string>
           </argument>

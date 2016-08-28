@@ -30,6 +30,9 @@ if (scrCheckList(bounceList, lens)) {
     yPos = yPos - sin(degtorad(dir));
   }
 
+  xPos = xPos + cos(degtorad(dir));
+  yPos = yPos - sin(degtorad(dir));
+  
   var newBeam = instance_create(xPos, yPos, objBeam);
   
   newBeam.length = 1;

@@ -36,18 +36,24 @@ lensY[2] = 200;
 lensAngle[2] = 0;
 lensRange[2] = 60;
 
-lensX[1] = 400;
-lensY[1] = 480;
-lensAngle[1] = 60;
+lensX[1] = 450;
+lensY[1] = 500;
+lensAngle[1] = 0;
 lensRange[1] = 60;
 
-lensX[0] = 290;
-lensY[0] = 600;
-lensAngle[0] = 120;
+lensX[0] = 400;
+lensY[0] = 250;
+lensAngle[0] = 45;
 lensRange[0] = 60;
 
 
 //Initialize mirrors (in reverse order)
+mirrorX[2] = 330;
+mirrorY[2] = 350;
+mirrorAngle[2] = 290;
+mirrorRange[2] = 90;
+
+
 mirrorX[1] = 218;
 mirrorY[1] = 200;
 mirrorAngle[1] = 0;
@@ -55,7 +61,7 @@ mirrorRange[1] = 90;
 
 mirrorX[0] = 110;
 mirrorY[0] = 512;
-mirrorAngle[0] = 0;
+mirrorAngle[0] = 30;
 mirrorRange[0] = 180;
 
 
