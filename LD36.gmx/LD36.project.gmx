@@ -15,6 +15,7 @@
       <sprite>sprites\sprMirrorHolder</sprite>
       <sprite>sprites\sprLensHolder</sprite>
     </sprites>
+    <sprite>sprites\sprFort</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
