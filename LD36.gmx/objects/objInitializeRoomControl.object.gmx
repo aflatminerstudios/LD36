@@ -29,8 +29,8 @@
 
 // Linear values from 0.0-1.0
 var masterVolume = 1.0;
-var soundVolume = 1.0;
-var musicVolume = 0.8;
+var soundVolume = 0.8;
+var musicVolume = 0.4;
 
 audio_master_gain(masterVolume);
 audio_group_set_gain(audiogroup_default, soundVolume, 0);
