@@ -114,10 +114,10 @@ draw_set_halign(fa_center);
 //Get center
 var c = room_width / 2;
 
-draw_set_font(font_large);
+draw_set_font(font_largeInstructions);
 draw_text(c, 50, "How to Play");
 
-draw_set_font(font_regular);
+draw_set_font(font_regularInstructions);
 if (whichScreen == 1) {
   draw_text_ext(c, 150, "Destroy the enemy using lasers created by reflecting sunlight off mirrors.", -1, 900);
   
@@ -130,9 +130,9 @@ if (whichScreen == 1) {
   draw_text_ext(c, 150, "If you do not focus the beams, they will not damage the ship.", -1, 900);
   draw_sprite(sprUnfocusedHit, 0, 512, 325)
   
-  draw_text_ext(c, 525, "To aim the lenses         and mirrors         , just click and drag the handles.", -1, 900);
-  draw_sprite(sprLensHolder, 0, 545, 525);
-  draw_sprite(sprMirrorHolder, 0, 935, 525);
+  draw_text_ext(c, 525, "To aim the lenses              and mirrors              , just click and drag the handles.", -1, 900);
+  draw_sprite(sprLensHolder, 0, 437, 525);
+  draw_sprite(sprMirrorHolder, 0, 730, 525);
 } else if (whichScreen == 3) {
   draw_text_ext(c, 150, "Protect the temples and destroy all the enemies to win the game!", -1, 900);
   draw_sprite(sprFort, 0, 512, 325);
