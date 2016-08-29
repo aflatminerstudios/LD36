@@ -22,6 +22,7 @@
     <sprite>sprites\sprStartButton</sprite>
     <sprite>sprites\sprCreditsButton</sprite>
     <sprite>sprites\sprInstructionsButton</sprite>
+    <sprite>sprites\sprRoundBackground</sprite>
     <sprite>sprites\sprCannonSmoke</sprite>
     <sprite>sprites\sprCannonball</sprite>
   </sprites>
@@ -55,8 +56,10 @@
     <script>scripts\scrNull.gml</script>
   </scripts>
   <fonts name="fonts">
+    <font>fonts\font_huge</font>
     <font>fonts\font_large</font>
     <font>fonts\font_regular</font>
+    <font>fonts\font_small</font>
   </fonts>
   <objects name="objects">
     <objects name="Title Screen">
@@ -96,6 +99,7 @@
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
+    <object>objects\objRoundIndicator</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R2</timeline>
