@@ -8,6 +8,31 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Setup variables
+
+whichScreen = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,11 +50,77 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Go to game
+            <string>///Go through screens until exit
 
 if (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any)) {
+  whichScreen++;
+}
+
+if (whichScreen == 4) {
   room_goto(roomTitle);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw the instructions
+
+var color = draw_get_color();
+draw_set_color(c_red);
+draw_set_halign(fa_center);
+
+//Get center
+var c = room_width / 2;
+
+draw_set_font(font_large);
+draw_text(c, 50, "How to Play");
+
+draw_set_font(font_regular);
+if (whichScreen == 1) {
+  draw_text_ext(c, 150, "Destroy the enemy using lasers created by reflecting sunlight off mirrors.", -1, 900);
+  
+  draw_sprite(sprDamagingEnemy, 0, 512, 325)
+  
+  draw_text_ext(c, 425, "In order for the lasers to do damage, you must first focus them through a lens.", -1, 900);
+  
+  draw_sprite(sprFocusingBeam, 0, 512, 625);;
+} else if (whichScreen == 2) {
+  draw_text_ext(c, 150, "If you do not focus the beams, they will not damage the ship.", -1, 900);
+  draw_sprite(sprUnfocusedHit, 0, 512, 325)
+  
+  draw_text_ext(c, 525, "To aim the lenses         and mirrors         , just click and drag the handles.", -1, 900);
+  draw_sprite(sprLensHolder, 0, 545, 525);
+  draw_sprite(sprMirrorHolder, 0, 935, 525);
+} else if (whichScreen == 3) {
+  draw_text_ext(c, 150, "Protect the temples and destroy all the enemies to win the game!", -1, 900);
+  draw_sprite(sprFort, 0, 512, 325);
+  draw_set_font(font_huge);
+  draw_text(c, 450, "Good luck!");
+}
+
+
+
+draw_set_halign(fa_center);
+draw_set_color(color);
+draw_set_font(font_regular);
 </string>
           </argument>
         </arguments>

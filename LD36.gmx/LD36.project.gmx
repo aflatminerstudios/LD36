@@ -39,6 +39,11 @@
       <sprite>sprites\sprLensHolder</sprite>
       <sprite>sprites\sprLensGlowing</sprite>
     </sprites>
+    <sprites name="Instructions">
+      <sprite>sprites\sprFocusingBeam</sprite>
+      <sprite>sprites\sprDamagingEnemy</sprite>
+      <sprite>sprites\sprUnfocusedHit</sprite>
+    </sprites>
     <sprite>sprites\sprExplosion</sprite>
     <sprite>sprites\sprFort</sprite>
     <sprite>sprites\sprFortDestroyed</sprite>
