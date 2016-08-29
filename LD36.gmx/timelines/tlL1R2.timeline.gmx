@@ -76,8 +76,6 @@ while (s == noone) {
 var s = noone;
 var xAdd = 0;
 
-show_debug_message("Second spawn");
-
 while (s == noone) {
   var r = irandom(100);
   if (collision_rectangle(1000 + xAdd, 150 + r, 1100 + xAdd, 250 + r, objEnemy, true, false) == noone) {
@@ -128,7 +126,6 @@ var shipSpeed = 1.5;
 
 var xAdd = 0;
 var s = noone;
-show_debug_message("3rd spawn");
 
 while (s == noone) {
   var r = irandom(room_height/3 - 100);
