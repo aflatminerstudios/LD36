@@ -23,7 +23,6 @@
     <sprite>sprites\sprCreditsButton</sprite>
     <sprite>sprites\sprInstructionsButton</sprite>
     <sprite>sprites\sprRoundBackground</sprite>
-
     <sprite>sprites\sprCannonSmoke</sprite>
     <sprite>sprites\sprCannonball</sprite>
   </sprites>
