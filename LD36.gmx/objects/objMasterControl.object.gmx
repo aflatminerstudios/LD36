@@ -118,7 +118,7 @@ audio_stop_sound(musTitleScreen);
 
 // Start the music if it isn't already playing
 if(!audio_is_playing(musMainGame)) {
-  audio_play_sound(musMainGame, 0, false);
+  audio_play_sound(musMainGame, 0, true);
 }
 </string>
           </argument>
