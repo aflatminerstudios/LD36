@@ -43,6 +43,8 @@ attackValue = 5;
 
 //Attack speed in seconds
 attackSpeed = 0.5;
+
+attackScript = scrBasicAttack;
 </string>
           </argument>
         </arguments>
@@ -65,9 +67,11 @@ attackSpeed = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Attack - most basic script
+            <string>///Attack using scrBasicAttack
 
-scrBasicAttack(self.id);
+script_execute(attackScript, self.id);
+
+//scrBasicAttack(self.id);
 </string>
           </argument>
         </arguments>

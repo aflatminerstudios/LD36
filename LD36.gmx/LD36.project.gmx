@@ -22,6 +22,7 @@
     <sprite>sprites\sprStartButton</sprite>
     <sprite>sprites\sprCreditsButton</sprite>
     <sprite>sprites\sprInstructionsButton</sprite>
+    <sprite>sprites\sprCannonSmoke</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -37,7 +38,6 @@
       <script>scripts\scrBeamLens.gml</script>
     </scripts>
     <script>scripts\scrCalcMouseDist.gml</script>
-    <script>scripts\scrBasicAttack.gml</script>
     <script>scripts\scrCheckList.gml</script>
     <script>scripts\scrTargetEnemy.gml</script>
     <script>scripts\scrEndRound.gml</script>
@@ -45,6 +45,10 @@
     <script>scripts\scrSetupLevel.gml</script>
     <script>scripts\scrStartRound.gml</script>
     <script>scripts\scrGameOverCheck.gml</script>
+    <scripts name="Enemy Attacks">
+      <script>scripts\scrBasicAttack.gml</script>
+      <script>scripts\scrShipAttack.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_large</font>
@@ -83,6 +87,7 @@
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
+    <object>objects\objCannonSmoke</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL1R1</timeline>
