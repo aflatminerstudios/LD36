@@ -188,7 +188,7 @@ isActive = true;
             <string>///Draw beam
 
 if (focused) {
-  color = make_color_rgb(255, 153, 153);  
+  color = make_color_rgb(150, 10, 10);  
   draw_line_width_color(x, y, x2, y2, (power(1.5, focusNum) * width), color, color);
   color = c_red;
 } else {
