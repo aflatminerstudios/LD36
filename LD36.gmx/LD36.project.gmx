@@ -83,6 +83,8 @@
     <font>fonts\font_small</font>
   </fonts>
   <objects name="objects">
+    <object>objects\objInitializeRoomControl</object>
+    <object>objects\objLogoScreenControl</object>
     <objects name="Title Screen">
       <object>objects\objTitleControl</object>
       <object>objects\objStartButton</object>
@@ -129,12 +131,13 @@
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\roomInitialize</room>
+    <room>rooms\roomLogoScreen</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
     <room>rooms\roomTest</room>
     <room>rooms\roomInstructions</room>
     <room>rooms\roomCredits</room>
-    <room>rooms\roomLogoScreen</room>
   </rooms>
   <constants number="1">
     <constant name="MIN_SUBLENGTH">5</constant>
@@ -142,6 +145,10 @@
   <help>
     <rtf>help.rtf</rtf>
   </help>
+  <audiogroups name="audiogroups">
+    <audiogroup name="audiogroup_default"/>
+    <audiogroup name="audiogroup_music"/>
+  </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>
