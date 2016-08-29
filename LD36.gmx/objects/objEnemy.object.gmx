@@ -48,6 +48,8 @@ attackSpeedVariablePercent = 0.02;
 attackScript = scrBasicAttack;
 
 destructionSound = sndNull;
+
+collidingWith = noone;
 </string>
           </argument>
         </arguments>
@@ -99,22 +101,37 @@ script_execute(attackScript, self.id);
             <kind>1</kind>
             <string>///Move until a certain spot
 
+var colliding = place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy);
+collidingWith = noone;
+
+if (colliding) {
+  collidingWith = instance_place(x + moveSpeedX, y + moveSpeedY, objEnemy);
+}
+
+if (collidingWith != noone) {
+  with (collidingWith) {
+    if (collidingWith == other.id) {
+      colliding = false;
+    }
+  }
+}
+
 if (moveSpeedX &lt; 0) {
-  if (x &gt; moveEndX &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+  if (x &gt; moveEndX &amp;&amp; !colliding) {
     x += moveSpeedX;
   }
 } else {
-  if (x &lt; moveEndX &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+  if (x &lt; moveEndX &amp;&amp; !colliding) {
    x += moveSpeedX;
   }
 }
 
 if (moveSpeedY &lt; 0) {
-  if (y &gt; moveEndY &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+  if (y &gt; moveEndY &amp;&amp; !colliding) {
     y += moveSpeedY;
   }
 } else {
-  if (y &lt; moveEndY &amp;&amp; !place_meeting(x + moveSpeedX, y + moveSpeedY, objEnemy)) {
+  if (y &lt; moveEndY &amp;&amp; !colliding) {
     y += moveSpeedY;
   }
 }
