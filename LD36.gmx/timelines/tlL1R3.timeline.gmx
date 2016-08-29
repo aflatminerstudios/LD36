@@ -146,11 +146,6 @@ var tx = 525;
 var ty = irandom(room_height/2 - 100) + room_height/2 + 50;
 scrTargetEnemy(s, tx, ty, shipSpeed);
 
-
-with (objMasterControl) {
-  show_debug_message("round ending available");
-  roundEnding = true;
-}
 </string>
           </argument>
         </arguments>
