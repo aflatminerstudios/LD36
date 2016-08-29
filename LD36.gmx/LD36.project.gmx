@@ -25,6 +25,8 @@
     <sprite>sprites\sprRoundBackground</sprite>
     <sprite>sprites\sprCannonSmoke</sprite>
     <sprite>sprites\sprCannonball</sprite>
+    <sprite>sprites\sprMerman</sprite>
+    <sprite>sprites\sprTrident</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -51,6 +53,7 @@
       <script>scripts\scrBasicAttack.gml</script>
       <script>scripts\scrShipAttack.gml</script>
       <script>scripts\scrDamageTarget.gml</script>
+      <script>scripts\scrMermanAttack.gml</script>
     </scripts>
     <script>scripts\scrEndLevel.gml</script>
     <script>scripts\scrNull.gml</script>
@@ -81,6 +84,8 @@
       <object>objects\objCannonSmoke</object>
       <object>objects\objProjectile</object>
       <object>objects\objCannonball</object>
+      <object>objects\objTrident</object>
+      <object>objects\objMerman</object>
     </objects>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">

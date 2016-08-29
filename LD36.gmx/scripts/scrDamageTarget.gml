@@ -3,4 +3,8 @@
 var targetInstance = argument0;
 var damage = argument1;
 
-targetInstance.currentHP -= damage;
+if (instance_exists(targetInstance)) {
+
+  targetInstance.currentHP -= damage;
+
+}
