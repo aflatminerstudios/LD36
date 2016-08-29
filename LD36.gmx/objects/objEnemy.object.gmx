@@ -46,6 +46,8 @@ attackSpeed = 0.5;
 attackSpeedVariablePercent = 0.02;
 
 attackScript = scrBasicAttack;
+
+destructionSound = sndNull;
 </string>
           </argument>
         </arguments>
