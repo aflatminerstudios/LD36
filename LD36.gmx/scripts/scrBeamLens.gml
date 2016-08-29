@@ -71,7 +71,7 @@ if (scrCheckList(bounceList, lens)) {
   newBeam.dir = newDir;
   
   newBeam.focused = true;
-  newBeam.damage = power(1.5, focusNum) * damage;
+  newBeam.damage = power(2, focusNum) * damage;
 
   newBeam.bounceList = bounceList;
   newBeam.focusNum = focusNum + 1;  
