@@ -28,6 +28,8 @@
             <string>///Basic setup
 
 parent = noone;
+
+beamColliding = false;
 </string>
           </argument>
         </arguments>
@@ -54,6 +56,48 @@ parent = noone;
 
 if (parent != noone) {
   image_angle = parent.image_angle;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Check for initial beam collision
+
+if (!beamColliding) {
+  with (objBeam) {
+    if (beamParent == other.id) {
+      other.beamColliding = true;
+      show_debug_message("Beam colliding with lens");
+      //audio_play_sound(sndLaserFocus, 0, false);
+    }
+  }
+} else if (beamColliding) {
+  var stillColliding = false;
+  with (objBeam) {
+    if (beamParent == other.id) {
+      stillColliding = true;
+    }
+  }
+  if (!stillColliding) {
+    beamColliding = false;
+  }
+  
 }
 </string>
           </argument>
