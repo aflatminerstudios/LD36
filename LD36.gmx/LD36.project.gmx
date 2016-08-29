@@ -106,6 +106,7 @@
       <object>objects\objStartButton</object>
       <object>objects\objCreditsButton</object>
       <object>objects\objInstructionsButton</object>
+      <object>objects\objTitleScreenExtraText</object>
     </objects>
     <objects name="Credits Screen">
       <object>objects\objCreditsControl</object>

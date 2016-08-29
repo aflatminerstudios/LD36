@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,62 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Change volume levels
+            <string>/// Draw game info
 
-// Linear values from 0.0-1.0
-var masterVolume = 1.0;
-var soundVolume = 1.0;
-var musicVolume = 0.8;
+draw_set_colour(make_colour_rgb(255, 255, 64));
+draw_set_font(font_small);
+draw_set_halign(fa_left)
+draw_set_valign(fa_bottom);
+draw_text(32, 716, "Built for Ludum Dare 36");
+draw_text(32, 736, "by A-Flat Miner Studios");
 
-audio_master_gain(masterVolume);
-audio_group_set_gain(audiogroup_default, soundVolume, 0);
-audio_group_set_gain(audiogroup_music, musicVolume, 0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Load audiogroup_music
 
-audio_group_load(audiogroup_music);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Go to logo room
-
-room_goto(roomLogoScreen);
+// Return to old valign
+draw_set_valign(fa_top);
 </string>
           </argument>
         </arguments>
