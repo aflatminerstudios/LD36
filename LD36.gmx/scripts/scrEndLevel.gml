@@ -1,5 +1,15 @@
 ///scrEndLevel()
 
 with (objMasterControl) {
-  show_debug_message("end level?");
+  
+  levelNum++;
+  
+  
+  if (array_length_1d(levelObjects) <= levelNum) {   
+    wonGame = true; 
+    scrGameOver();
+  }  else {
+    scrSetupLevel();
+  }
+
 }
