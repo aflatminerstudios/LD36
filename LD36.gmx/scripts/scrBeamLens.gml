@@ -27,7 +27,7 @@ if (scrCheckList(bounceList, lens)) {
 
   //Handle going across the 0
   var diff = lens.image_angle - dir;
-  if (abs(diff) > 180) {
+  if (abs(diff) > 180 && back) {
     var m = max(lens.image_angle, dir);
     if (m == dir) {
       dir -= 360;
@@ -39,10 +39,9 @@ if (scrCheckList(bounceList, lens)) {
   if (back) {    
     var newDir = (lens.image_angle + dir) / 2;  
   } else {
-    var newDir = ((lens.image_angle + dir + 180) / 2);
+    var newDir = ((lens.image_angle + dir - 180) / 2);
   }
 
-  
 
   var xPos = pos[0] + cos(degtorad(newDir));
   var yPos = pos[1] - sin(degtorad(newDir));
