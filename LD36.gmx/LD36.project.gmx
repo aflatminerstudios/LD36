@@ -63,6 +63,7 @@
   <backgrounds name="background">
     <background>background\bgMap</background>
     <background>background\bgTitle</background>
+    <background>background\bgTitleLogo</background>
     <background>background\bgInstructions</background>
     <background>background\bgCredits</background>
   </backgrounds>
