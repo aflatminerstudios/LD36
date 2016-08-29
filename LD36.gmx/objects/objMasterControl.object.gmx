@@ -111,8 +111,8 @@ scrSetupLevel();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Start round
-scrStartRound();
+            <string>///Start new round
+instance_create(room_width/2, room_height/2, objRoundIndicator);
 </string>
           </argument>
         </arguments>
