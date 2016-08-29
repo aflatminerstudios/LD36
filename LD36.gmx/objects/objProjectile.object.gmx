@@ -61,7 +61,6 @@ collisionRadius = 1; // pixels from origin of target
 if(instance_exists(targetInstance)) {
   if(distance_to_object(targetInstance) &lt; collisionRadius) {
     // Cause damage to target
-    show_debug_message("Projectile has hit target.");
     scrDamageTarget(targetInstance, damage);
     var explosion = instance_create(x, y, objExplosion);
     explosion.image_xscale = 0.4;

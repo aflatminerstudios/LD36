@@ -1,6 +1,5 @@
 /// scrShipAttack
 
-
 var thisEnemy = argument0;
 
 // Fire the cannon
