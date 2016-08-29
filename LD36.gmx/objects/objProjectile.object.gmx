@@ -28,9 +28,8 @@
             <string>/// Basic variables
 
 // Set these when creating the projectile
-originX = x; 
-originY = y;
 targetInstance = noone;
+hitSound = sndNull;
 
 damage = 5;
 projectileSpeed = 5;
@@ -67,6 +66,8 @@ if(instance_exists(targetInstance)) {
     var explosion = instance_create(x, y, objExplosion);
     explosion.image_xscale = 0.4;
     explosion.image_yscale = 0.4;
+    if(hitSound != sndNull)
+      audio_play_sound(hitSound, 0, false);
     instance_destroy();
   }
 }

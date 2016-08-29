@@ -21,6 +21,7 @@
     <sound>sound\sndLaserFocus</sound>
     <sound>sound\sndShipDestroyed</sound>
     <sound>sound\sndMermanDestroyed</sound>
+    <sound>sound\sndNull</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprShip</sprite>
