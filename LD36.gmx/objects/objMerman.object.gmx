@@ -40,7 +40,7 @@ moveEndY = 0;
 
 //Attack variables
 attackBegin = 600;
-attackValue = 3;
+attackValue = 2.5;
 
 //Attack speed in seconds
 attackSpeed = 0.25;

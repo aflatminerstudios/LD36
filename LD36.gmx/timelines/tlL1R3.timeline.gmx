@@ -113,7 +113,7 @@ while (s == noone) {
             <kind>1</kind>
             <string>///Spawn 2 enemies that move diagonally
 
-var shipSpeed = objMerman;
+var shipSpeed = 1;
 
 var s = noone;
 var xAdd = 0;
@@ -227,7 +227,7 @@ while (s == noone) {
           <argument>
             <kind>1</kind>
             <string>///Spawn 2 diagonal-moving enemies and 1 that moves straight
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 
 var xAdd = 0;
@@ -347,7 +347,7 @@ while (s == noone) {
 
 
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 var yAdd = 0;
@@ -409,7 +409,7 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
 
 
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 var yAdd = 0;
@@ -460,7 +460,7 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
           <argument>
             <kind>1</kind>
             <string>///Spawn 4 diagonal-moving enemies (further back than normal)
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 var mermanSpeed = shipSpeed;
 
 var xAdd = 0;

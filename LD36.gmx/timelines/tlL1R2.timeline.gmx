@@ -121,7 +121,7 @@ while (s == noone) {
           <argument>
             <kind>1</kind>
             <string>///Spawn 3 diagonal-moving enemies
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 
 var xAdd = 0;
@@ -247,7 +247,7 @@ while (s == noone) {
 
 
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 var yAdd = 0;
@@ -362,7 +362,7 @@ while (s == noone) {
 
 
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 var yAdd = 0;
@@ -414,7 +414,7 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
             <kind>1</kind>
             <string>///Spawn 2 enemies that move diagonally
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 var xAdd = 0;
