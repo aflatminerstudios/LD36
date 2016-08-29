@@ -59,6 +59,7 @@
     <sprite>sprites\sprTrident</sprite>
     <sprite>sprites\sprLogoScreen</sprite>
     <sprite>sprites\sprBigShip</sprite>
+    <sprite>sprites\sprRotate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -144,6 +145,7 @@
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
     <object>objects\objRoundIndicator</object>
+    <object>objects\objRotateIndicator</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tlL2R1</timeline>
