@@ -3,7 +3,6 @@
 
 var thisEnemy = argument0;
 
-show_debug_message("Ship attack.");
 var fireX = x + irandom(40) - 20;
 var fireY = y+20;
 var cannonSmoke = instance_create(fireX, fireY, objCannonSmoke);

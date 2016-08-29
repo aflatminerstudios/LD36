@@ -33,8 +33,8 @@ background = bgMap;
 //Initialize lenses 
 //(in reverse order, game maker apparently likes it better if you do it this way)
 lensX[3] = 435;
-lensY[3] = 57;
-lensAngle[3] = 75;
+lensY[3] = 65;
+lensAngle[3] = 45;
 lensRange[3] = 120;
 
 lensX[2] = 413;
@@ -62,12 +62,12 @@ mirrorRange[2] = 180;
 
 mirrorX[1] = 90;
 mirrorY[1] = 234;
-mirrorAngle[1] = 55;
+mirrorAngle[1] = 50;
 mirrorRange[1] = 180;
 
 mirrorX[0] = 82;
 mirrorY[0] = 555;
-mirrorAngle[0] = 45;
+mirrorAngle[0] = 40;
 mirrorRange[0] = 180;
 
 
@@ -103,6 +103,7 @@ fortHP[0] = 50;
 
 
 //Initialize round timelines
+timeline[2] = tlL1R3;
 timeline[1] = tlL1R2;
 timeline[0] = tlL1R1;
 

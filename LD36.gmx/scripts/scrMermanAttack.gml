@@ -2,8 +2,6 @@
 
 var attacker = argument0;
 
-show_debug_message("Merman attacking");
-
 // Find nearest target
 if (instance_number(objFort) >= 1) {
   var target = instance_nearest(attacker.x, attacker.y, objFort);
