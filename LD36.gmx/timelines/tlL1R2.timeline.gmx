@@ -54,7 +54,7 @@ while (s == noone) {
     </event>
   </entry>
   <entry>
-    <step>75</step>
+    <step>100</step>
     <event>
       <action>
         <libid>1</libid>
@@ -74,6 +74,8 @@ while (s == noone) {
             <kind>1</kind>
             <string>///Spawn 2 enemies
 var s = noone;
+
+show_debug_message("Second spawn");
 
 while (s == noone) {
   var r = irandom(100);
@@ -98,7 +100,7 @@ while (s == noone) {
     </event>
   </entry>
   <entry>
-    <step>130</step>
+    <step>175</step>
     <event>
       <action>
         <libid>1</libid>
@@ -120,7 +122,7 @@ while (s == noone) {
 var shipSpeed = 1.5;
 
 var s = noone;
-
+show_debug_message("3rd spawn");
 
 while (s == noone) {
   var r = irandom(room_height/3 - 100);
@@ -170,7 +172,7 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
     </event>
   </entry>
   <entry>
-    <step>175</step>
+    <step>250</step>
     <event>
       <action>
         <libid>1</libid>
@@ -214,7 +216,7 @@ while (s == noone) {
     </event>
   </entry>
   <entry>
-    <step>350</step>
+    <step>425</step>
     <event>
       <action>
         <libid>1</libid>
@@ -271,7 +273,7 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
     </event>
   </entry>
   <entry>
-    <step>500</step>
+    <step>575</step>
     <event>
       <action>
         <libid>1</libid>
@@ -324,7 +326,7 @@ while (s == noone) {
     </event>
   </entry>
   <entry>
-    <step>650</step>
+    <step>725</step>
     <event>
       <action>
         <libid>1</libid>
