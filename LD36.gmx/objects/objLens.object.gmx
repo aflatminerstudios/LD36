@@ -77,7 +77,8 @@ if (parent != noone) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///Check for initial beam collision
+
 if (!beamColliding) {
   with (objBeam) {
     if (beamParent == other.id) {
