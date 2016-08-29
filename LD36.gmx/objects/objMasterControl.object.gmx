@@ -34,6 +34,7 @@ health = 10000;
 roundEnding = false;
 roundNum = 0;
 levelNum = 0;
+wonGame = false;
 
 draw_set_font(font_regular);
 
