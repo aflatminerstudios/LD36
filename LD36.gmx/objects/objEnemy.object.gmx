@@ -67,7 +67,7 @@ attackScript = scrBasicAttack;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Attack using scrBasicAttack
+            <string>///Attack using attackScript
 
 script_execute(attackScript, self.id);
 
