@@ -33,17 +33,17 @@ hp = 75;
 value = 150;
 
 //Move variables
-moveSpeedX = -2;
+moveSpeedX = -1.9;
 moveSpeedY = 0;
 moveEndX = 544;
 moveEndY = 0;
 
 //Attack variables
 attackBegin = 600;
-attackValue = 2.5;
+attackValue = 2;
 
 //Attack speed in seconds
-attackSpeed = 0.25;
+attackSpeed = 0.3;
 
 attackScript = scrMermanAttack;
 

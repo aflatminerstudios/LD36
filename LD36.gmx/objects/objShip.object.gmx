@@ -34,7 +34,7 @@ hp = 100;
 value = 100;
 
 //Move variables
-moveSpeedX = -.8;
+moveSpeedX = -.85;
 moveSpeedY = 0;
 moveEndX = 544;
 moveEndY = 0;
@@ -42,7 +42,7 @@ moveEndY = 0;
 attackBegin = 600;
 attackValue = 5;
 //Attack speed in seconds
-attackSpeed = 0.6;
+attackSpeed = 0.58;
 
 attackScript = scrShipAttack;
 
