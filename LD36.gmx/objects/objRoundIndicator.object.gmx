@@ -107,7 +107,7 @@ alarm[1] = room_speed*0.40;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -124,7 +124,9 @@ alarm[1] = room_speed*0.40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Display text
+            <string>///Display text on background
+
+draw_self();
 
 var oldColor = draw_get_color();
 draw_set_color(c_red);
@@ -132,10 +134,14 @@ draw_set_color(c_red);
 draw_set_font(font_huge);
 draw_set_halign(fa_center);
 
-draw_text(room_width/2, room_height/2 - 100, "Round " + string(objMasterControl.roundNum + 1));
+
+var verticalOffset = 8;
+draw_set_valign(fa_bottom);
+draw_text(x, y - verticalOffset, "Round " + string(objMasterControl.roundNum + 1));
 
 if (drawStart) {
-  draw_text(room_width/2, room_height/2, "Start!");
+draw_set_valign(fa_top);
+  draw_text(x, y + verticalOffset, "Start!");
 }
 
 draw_set_color(oldColor);
