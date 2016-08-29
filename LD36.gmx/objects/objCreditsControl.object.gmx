@@ -77,6 +77,13 @@ draw_text_ext(512, 345, "Drew pictures and made noises", -1, 900);
 draw_text_ext(512, 475, "Tapped on the keyboard until the bugs stopped", -1, 900);
 draw_text_ext(512, 625, "Stormed some brains until the ideas came", -1, 900);
 
+draw_set_font(font_small);
+draw_set_color(make_color_rgb(42, 255, 242));
+
+draw_set_halign(fa_right);
+draw_text(325, 125, "@abminerstudios");
+draw_text(938, 125, "http://aflatminer.com");
+
 draw_set_halign(fa_center);
 draw_set_color(color);
 draw_set_font(font_regular);
