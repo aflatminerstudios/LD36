@@ -47,7 +47,9 @@ with (objMasterControl) {
     f.maxHP = level.fortHP[i];
     f.currentHP = f.maxHP;
   }
+  
+  roundNum = 0;
     
   //Start round after a short delay
-  alarm[0] = room_speed*0.15;
+  alarm[0] = room_speed*0.25;
 }

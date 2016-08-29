@@ -56,8 +56,8 @@ fortX[1] = 295;
 fortY[1] = 450;
 fortHP[1] = 50;
 
-fortX[0] = 400;
-fortY[0] = 670;
+fortX[0] = 300;
+fortY[0] = 680;
 fortHP[0] = 50;
 
 

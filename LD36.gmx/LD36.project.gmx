@@ -53,6 +53,7 @@
     <sprite>sprites\sprMerman</sprite>
     <sprite>sprites\sprTrident</sprite>
     <sprite>sprites\sprLogoScreen</sprite>
+    <sprite>sprites\sprBigShip</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -78,6 +79,7 @@
     <scripts name="Enemy Attacks">
       <script>scripts\scrBasicAttack.gml</script>
       <script>scripts\scrShipAttack.gml</script>
+      <script>scripts\scrBigShipAttack.gml</script>
       <script>scripts\scrDamageTarget.gml</script>
       <script>scripts\scrMermanAttack.gml</script>
     </scripts>
@@ -108,6 +110,7 @@
     <objects name="Enemies and Attacks">
       <object>objects\objEnemy</object>
       <object>objects\objShip</object>
+      <object>objects\objBigShip</object>
       <object>objects\objExplosion</object>
       <object>objects\objCannonSmoke</object>
       <object>objects\objProjectile</object>
@@ -128,6 +131,7 @@
     </objects>
     <object>objects\objMasterControl</object>
     <object>objects\objLevel1</object>
+    <object>objects\objLevel2</object>
     <object>objects\objTester</object>
     <object>objects\objLevelTest</object>
     <object>objects\objFort</object>
@@ -136,16 +140,20 @@
     <object>objects\objRoundIndicator</object>
   </objects>
   <timelines name="timelines">
+    <timeline>timelines\tlL2R1</timeline>
     <timeline>timelines\tlL1R3</timeline>
     <timeline>timelines\tlL1R2</timeline>
     <timeline>timelines\tlL1R1</timeline>
+    <timeline>timelines\tlL2R2</timeline>
+    <timeline>timelines\tlL2R3</timeline>
+    <timeline>timelines\testTL</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
     <room>rooms\roomLogoScreen</room>
     <room>rooms\roomInstructions</room>
-    <room>rooms\roomTitle</room>
     <room>rooms\roomTest</room>
+    <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
     <room>rooms\roomCredits</room>
   </rooms>
