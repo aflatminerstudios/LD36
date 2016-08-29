@@ -46,6 +46,7 @@
     <sprite>sprites\sprCannonball</sprite>
     <sprite>sprites\sprMerman</sprite>
     <sprite>sprites\sprTrident</sprite>
+    <sprite>sprites\sprLogoScreen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>

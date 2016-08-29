@@ -28,7 +28,7 @@
             <string>///setup variables
 
 drawStart = false;
-alarm[0] = room_speed;
+alarm[0] = room_speed*0.50;
 </string>
           </argument>
         </arguments>
@@ -101,7 +101,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>drawStart = true;
-alarm[1] = room_speed;
+alarm[1] = room_speed*0.40;
 </string>
           </argument>
         </arguments>
