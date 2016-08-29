@@ -14,6 +14,7 @@
       <sprite>sprites\sprMirrorHandle</sprite>
       <sprite>sprites\sprMirrorHolder</sprite>
       <sprite>sprites\sprLensHolder</sprite>
+      <sprite>sprites\sprLensGlowing</sprite>
     </sprites>
     <sprite>sprites\sprExplosion</sprite>
     <sprite>sprites\sprFort</sprite>
