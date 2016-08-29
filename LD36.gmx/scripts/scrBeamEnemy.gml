@@ -1,4 +1,4 @@
-///scrBeamEnemy(beam, enemy, focused, damage, bounceList, dir)
+///scrBeamEnemy(beam, enemy, focused, damage, bounceList, dir, pos)
 
 var beam = argument0;
 var enemy = argument1;
@@ -6,8 +6,12 @@ var focused = argument2;
 var damage = argument3;
 var bounceList = argument4;
 var dir = argument5;
+var pos = argument6;
 
 enemy.hp -= damage;
+var smoke = instance_create(pos[0], pos[1], objLaserSmoke);
+smoke.depth = enemy.depth - 1;
+audio_play_sound(choose(sndLaserHit, sndLaserHit2, sndLaserHit3), 0, false);
 /*enemy.flashing = true;
 enemy.alarm[11] = room_speed / 2;
 if (enemy.alarm[10] <= 0) {

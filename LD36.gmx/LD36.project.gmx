@@ -16,9 +16,14 @@
       <sound>sound\sndTridentThrow</sound>
       <sound>sound\sndTridentHit</sound>
     </sounds>
+    <sounds name="Laser Sounds">
+      <sound>sound\sndLaserFocus</sound>
+      <sound>sound\sndLaserHit</sound>
+      <sound>sound\sndLaserHit2</sound>
+      <sound>sound\sndLaserHit3</sound>
+    </sounds>
     <sound>sound\sndRoundBegin</sound>
     <sound>sound\sndGameOver</sound>
-    <sound>sound\sndLaserFocus</sound>
     <sound>sound\sndShipDestroyed</sound>
     <sound>sound\sndMermanDestroyed</sound>
     <sound>sound\sndNull</sound>
@@ -43,6 +48,7 @@
     <sprite>sprites\sprInstructionsButton</sprite>
     <sprite>sprites\sprRoundBackground</sprite>
     <sprite>sprites\sprCannonSmoke</sprite>
+    <sprite>sprites\sprLaserSmoke</sprite>
     <sprite>sprites\sprCannonball</sprite>
     <sprite>sprites\sprMerman</sprite>
     <sprite>sprites\sprTrident</sprite>
@@ -110,6 +116,7 @@
       <object>objects\objMerman</object>
     </objects>
     <object>objects\objBeam</object>
+    <object>objects\objLaserSmoke</object>
     <objects name="LensesAndMirrors">
       <object>objects\objLensHolder</object>
       <object>objects\objMirrorHolder</object>

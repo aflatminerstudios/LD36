@@ -131,7 +131,7 @@ if(isActive) {
         scrBeamMirror(self.id, collMirror, focused, damage, bounceList, dir, pos);
         break;
       } else if (collEnemy != noone &amp;&amp; focused) {
-        scrBeamEnemy(self.id, collEnemy, focused, damage, bounceList, dir);
+        scrBeamEnemy(self.id, collEnemy, focused, damage, bounceList, dir, pos);
         break;
       } else if (x2 &gt; room_width || y2 &gt; room_height || x2 &lt; 0 || y2 &lt; 0) {
         break;
