@@ -83,8 +83,7 @@ if (!beamColliding) {
   with (objBeam) {
     if (beamParent == other.id) {
       other.beamColliding = true;
-      show_debug_message("Beam colliding with lens");
-      //audio_play_sound(sndLaserFocus, 0, false);
+      audio_play_sound(sndLaserFocus, 0, false);
     }
   }
 } else if (beamColliding) {

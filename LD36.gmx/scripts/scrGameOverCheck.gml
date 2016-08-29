@@ -1,5 +1,6 @@
 ///scrGameOverCheck()
 
 if (instance_number(objFort) < 1) {
-  scrGameOver();
+  if(instance_number(objGameOverReport) < 1)
+    scrGameOver();
 }

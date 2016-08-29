@@ -45,6 +45,8 @@ attackValue = 5;
 attackSpeed = 0.5;
 
 attackScript = scrShipAttack;
+
+destructionSound = sndShipDestroyed;
 </string>
           </argument>
         </arguments>

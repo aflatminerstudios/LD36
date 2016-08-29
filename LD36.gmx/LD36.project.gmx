@@ -4,7 +4,25 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\musAFlatJingle</sound>
+      <sound>sound\musTitleScreen</sound>
+      <sound>sound\musMainGame</sound>
+    </sounds>
+    <sounds name="Projectiles">
+      <sound>sound\sndCannonFire</sound>
+      <sound>sound\sndCannonballHit</sound>
+      <sound>sound\sndTridentThrow</sound>
+      <sound>sound\sndTridentHit</sound>
+    </sounds>
+    <sound>sound\sndRoundBegin</sound>
+    <sound>sound\sndGameOver</sound>
+    <sound>sound\sndLaserFocus</sound>
+    <sound>sound\sndShipDestroyed</sound>
+    <sound>sound\sndMermanDestroyed</sound>
+    <sound>sound\sndNull</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprShip</sprite>
     <sprites name="MirrorsAndLenses">
@@ -66,6 +84,8 @@
     <font>fonts\font_small</font>
   </fonts>
   <objects name="objects">
+    <object>objects\objInitializeRoomControl</object>
+    <object>objects\objLogoScreenControl</object>
     <objects name="Title Screen">
       <object>objects\objTitleControl</object>
       <object>objects\objStartButton</object>
@@ -113,6 +133,8 @@
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\roomInitialize</room>
+    <room>rooms\roomLogoScreen</room>
     <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
     <room>rooms\roomTest</room>
@@ -125,6 +147,10 @@
   <help>
     <rtf>help.rtf</rtf>
   </help>
+  <audiogroups name="audiogroups">
+    <audiogroup name="audiogroup_default"/>
+    <audiogroup name="audiogroup_music"/>
+  </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>

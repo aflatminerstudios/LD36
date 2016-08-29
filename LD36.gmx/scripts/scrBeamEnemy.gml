@@ -20,6 +20,7 @@ if (enemy.hp <= 0) {
 
   with (enemy) {
     instance_create(x, y, objExplosion);
+    audio_play_sound(destructionSound, 0, false);
     instance_destroy();
   }
 }

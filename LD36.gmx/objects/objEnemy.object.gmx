@@ -43,8 +43,11 @@ attackValue = 5;
 
 //Attack speed in seconds
 attackSpeed = 0.5;
+attackSpeedVariablePercent = 0.02;
 
 attackScript = scrBasicAttack;
+
+destructionSound = sndNull;
 </string>
           </argument>
         </arguments>
@@ -138,7 +141,11 @@ if (moveSpeedY &lt; 0) {
             <string>///Attack if possible
 
 if (x &lt;= attackBegin &amp;&amp; alarm[0] &lt;= 0) {
-  alarm[0] = attackSpeed * room_speed;
+  // Adjust attack speed so it is not so exact, but still averages to the attack speed
+  var timeUntilNextAttack = attackSpeed * room_speed;
+  timeUntilNextAttack += timeUntilNextAttack*random_range(-attackSpeedVariablePercent, attackSpeedVariablePercent);
+  
+  alarm[0] = timeUntilNextAttack;
 }
 </string>
           </argument>

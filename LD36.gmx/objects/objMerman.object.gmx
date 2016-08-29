@@ -46,6 +46,8 @@ attackValue = 3;
 attackSpeed = 0.25;
 
 attackScript = scrMermanAttack;
+
+destructionSound = sndMermanDestroyed;
 </string>
           </argument>
         </arguments>

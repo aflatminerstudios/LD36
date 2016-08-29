@@ -7,6 +7,8 @@ if (instance_number(objFort) >= 1) {
   var target = instance_nearest(attacker.x, attacker.y, objFort);
   var targetDir = point_direction(attacker.x, attacker.y, target.x, target.y);
   
+  audio_play_sound(sndTridentThrow, 0, false);
+  
   var trident = instance_create(attacker.x, attacker.y - attacker.sprite_height/2 - 12, objTrident);
   
   trident.damage = attacker.attackValue;
