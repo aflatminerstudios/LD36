@@ -4,7 +4,22 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\musAFlatJingle</sound>
+      <sound>sound\musTitleScreen</sound>
+      <sound>sound\musMainGame</sound>
+    </sounds>
+    <sounds name="Projectiles">
+      <sound>sound\sndCannonFire</sound>
+      <sound>sound\sndCannonballHit</sound>
+      <sound>sound\sndTridentThrow</sound>
+      <sound>sound\sndTridentHit</sound>
+    </sounds>
+    <sound>sound\sndWinRound</sound>
+    <sound>sound\sndGameOver</sound>
+    <sound>sound\sndLaserFocus</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprShip</sprite>
     <sprites name="MirrorsAndLenses">
@@ -106,6 +121,7 @@
     <room>rooms\roomTest</room>
     <room>rooms\roomInstructions</room>
     <room>rooms\roomCredits</room>
+    <room>rooms\roomLogoScreen</room>
   </rooms>
   <constants number="1">
     <constant name="MIN_SUBLENGTH">5</constant>
