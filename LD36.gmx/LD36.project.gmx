@@ -134,10 +134,10 @@
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\roomTest</room>
     <room>rooms\roomInitialize</room>
     <room>rooms\roomLogoScreen</room>
     <room>rooms\roomTitle</room>
+    <room>rooms\roomTest</room>
     <room>rooms\roomMain</room>
     <room>rooms\roomInstructions</room>
     <room>rooms\roomCredits</room>
