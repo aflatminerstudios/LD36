@@ -8,7 +8,6 @@
     <sounds name="Music">
       <sound>sound\musAFlatJingle</sound>
       <sound>sound\musTitleScreen</sound>
-      <sound>sound\musMainGame</sound>
     </sounds>
     <sounds name="Projectiles">
       <sound>sound\sndCannonFire</sound>

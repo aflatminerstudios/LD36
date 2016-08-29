@@ -126,7 +126,7 @@ alarm[1] = room_speed*0.40;
             <kind>1</kind>
             <string>///Display text
 
-var color = draw_get_color();
+var oldColor = draw_get_color();
 draw_set_color(c_red);
 
 draw_set_font(font_huge);
@@ -138,7 +138,7 @@ if (drawStart) {
   draw_text(room_width/2, room_height/2, "Start!");
 }
 
-draw_set_color(color);
+draw_set_color(oldColor);
 draw_set_font(font_regular);
 
 </string>
