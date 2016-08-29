@@ -25,11 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Start jingle and set timer based on jingle length
-audio_play_sound(musAFlatJingle, 0, 0);
-alarm[0] = audio_sound_length(musAFlatJingle)*room_speed + room_speed*0.50;
+            <string>/// Set variables
 
-steps = 0;
+postSoundWaitingTime = room_speed * 0.25;
+waitingForAlarm = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Start jingle and set timer based on jingle length
+audio_play_sound(musAFlatJingle, 0, false);
 </string>
           </argument>
         </arguments>
@@ -60,30 +81,6 @@ room_goto(roomTitle);
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Start post-sound waiting period
-alarm[1] = 0*room_speed+1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -105,6 +102,32 @@ alarm[1] = 0*room_speed+1;
 
 if(mouse_check_button_pressed(mb_any)) {
   alarm[1] = 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Check for end of audio
+
+if(!audio_is_playing(musAFlatJingle) &amp;&amp; !waitingForAlarm) {
+  alarm[1] = postSoundWaitingTime;
+  waitingForAlarm = true;
 }
 </string>
           </argument>
