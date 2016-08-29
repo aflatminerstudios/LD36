@@ -9,7 +9,6 @@ with (objMasterControl) {
   
   if (array_length_1d(level.timeline) <= roundNum) {    
     scrEndLevel();  
-    scrGameOver();
   }  else {
     //Start new round in 1 second
     alarm[0] = room_speed;    
