@@ -45,6 +45,7 @@
     <script>scripts\scrSetupLevel.gml</script>
     <script>scripts\scrStartRound.gml</script>
     <script>scripts\scrGameOverCheck.gml</script>
+    <script>scripts\scrEndLevel.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_large</font>
