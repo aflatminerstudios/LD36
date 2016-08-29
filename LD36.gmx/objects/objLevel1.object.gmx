@@ -103,8 +103,9 @@ fortHP[0] = 50;
 
 
 //Initialize round timelines
+timeline[0] = tlL1R3;
 timeline[1] = tlL1R2;
-timeline[0] = tlL1R1;
+//timeline[0] = tlL1R1;
 
 </string>
           </argument>
