@@ -44,7 +44,10 @@ if (scrCheckList(bounceList, lens)) {
   if (back) {    
     var newDir = (lens.image_angle + dir) / 2;  
   } else {
-    var newDir = ((lens.image_angle + dir - 180) / 2);
+    var newDir = ((lens.image_angle + dir - 180) / 2) - 180;
+    if (abs(angle_difference(newDir, dir)) >= 90) {
+      newDir -= 180;
+    }
   }
 
 

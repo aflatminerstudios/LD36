@@ -52,15 +52,15 @@
   </views>
   <instances>
     <instance objName="objTester" x="29" y="17" name="inst_BA69BB0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMirrorHolder" x="200" y="81" name="inst_6C063AF5" locked="0" code="image_angle = 325;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="310"/>
-    <instance objName="objMirrorHolder" x="152" y="652" name="inst_78EA2E90" locked="0" code="image_angle = 45;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
-    <instance objName="objMirrorHolder" x="113" y="386" name="inst_11878D42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLensHolder" x="217" y="240" name="inst_40AD5D52" locked="0" code="image_angle = 225;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLensHolder" x="307" y="672" name="inst_20CAE315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMirrorHolder" x="364" y="107" name="inst_E68FD0DA" locked="0" code="image_angle = 240;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="240"/>
-    <instance objName="objMirrorHolder" x="235" y="475" name="inst_ECE872B6" locked="0" code="image_angle = 45;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
-    <instance objName="objLensHolder" x="443" y="234" name="inst_F64DF694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLensHolder" x="442" y="403" name="inst_1D60F419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMirrorHolder" x="132" y="363" name="inst_11878D42" locked="0" code="image_angle = 135;&#xA;initialImageAngle = image_angle;" scaleX="1" scaleY="1" colour="4294967295" rotation="135"/>
+    <instance objName="objLensHolder" x="289" y="597" name="inst_20CAE315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMirrorHolder" x="238" y="125" name="inst_E68FD0DA" locked="0" code="image_angle = 270;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="objLensHolder" x="352" y="179" name="inst_F64DF694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="330"/>
+    <instance objName="objLensHolder" x="454" y="251" name="inst_1D60F419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMirrorHolder" x="121" y="603" name="inst_DFCF7E57" locked="0" code="image_angle = 45;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
+    <instance objName="objLensHolder" x="414" y="473" name="inst_EEF83D1E" locked="0" code="image_angle = 30;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="30"/>
+    <instance objName="objLensHolder" x="422" y="677" name="inst_8274A5D3" locked="0" code="image_angle = 320;&#xA;initialImageAngle = image_angle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="320"/>
+    <instance objName="objLensHolder" x="512" y="447" name="inst_373FFA25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

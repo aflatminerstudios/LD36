@@ -31,13 +31,13 @@
 background = bgMap;
 
 //Initialize beams (reverse order, of course)
-beamsX[1] = 410;
+beamsX[1] = 88;
 beamsY[1] = 0;
-beamsDir[1] = 200;
+beamsDir[1] = 269;
 
-beamsX[0] = 300;
-beamsY[0] = room_height;
-beamsDir[0] = 120;
+beamsX[0] = 0;
+beamsY[0] = 350;
+beamsDir[0] = 340;
 
 //Initialize forts (again, reverse order)
 fortX[4] = 145;

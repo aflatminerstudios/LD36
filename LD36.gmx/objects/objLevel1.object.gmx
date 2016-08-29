@@ -65,14 +65,14 @@ mirrorY[1] = 234;
 mirrorAngle[1] = 50;
 mirrorRange[1] = 180;
 
-mirrorX[0] = 82;
+mirrorX[0] = 110;
 mirrorY[0] = 555;
 mirrorAngle[0] = 40;
 mirrorRange[0] = 180;
 
 
 //Initialize beams
-beamsX[1] = 410;
+beamsX[1] = 400;
 beamsY[1] = 0;
 beamsDir[1] = 240;
 
