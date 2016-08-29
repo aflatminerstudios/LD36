@@ -60,9 +60,9 @@ mirrorAngle[2] = 270;
 mirrorRange[2] = 180;
 
 
-mirrorX[1] = 74;
+mirrorX[1] = 90;
 mirrorY[1] = 234;
-mirrorAngle[1] = 90;
+mirrorAngle[1] = 55;
 mirrorRange[1] = 180;
 
 mirrorX[0] = 82;

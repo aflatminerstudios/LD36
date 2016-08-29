@@ -74,23 +74,27 @@ while (s == noone) {
             <kind>1</kind>
             <string>///Spawn 2 enemies
 var s = noone;
+var xAdd = 0;
 
 show_debug_message("Second spawn");
 
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 150 + r, 1100, 250 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 200 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 150 + r, 1100 + xAdd, 250 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 200 + r, objShip);
   }
+  xAdd++;
 }
 
 s = noone;
+xAdd = 0;
 
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 350 + r, 1100, 450 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 400 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 350 + r, 1100 + xAdd, 450 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 400 + r, objShip);
   }
+  xAdd++;
 }
 
 </string>
@@ -121,16 +125,18 @@ while (s == noone) {
             <string>///Spawn 3 diagonal-moving enemies
 var shipSpeed = 1.5;
 
+
+var xAdd = 0;
 var s = noone;
 show_debug_message("3rd spawn");
 
 while (s == noone) {
   var r = irandom(room_height/3 - 100);
-  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 100 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 50 + r, 1100 + xAdd, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 100 + r, objShip);
   }
+  xAdd++;
 }
-
 
 var tx = 525;
 var ty = irandom(room_height/3 - 100) + 100;
@@ -138,13 +144,14 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
 
 
 s = noone;
-
+xAdd = 0;
 
 while (s == noone) {
   var r = irandom(room_height/3 - 100);
-  if (collision_rectangle(1000, room_height/3 + 0 + r, 1100, room_height/3 + 100 + r + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, room_height/3 + 50 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, room_height/3 + 0 + r, 1100 + xAdd, room_height/3 + 100 + r + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, room_height/3 + 50 + r, objShip);
   }
+  xAdd++;
 }
 
 var tx = 525;
@@ -153,13 +160,14 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
 
 
 s = noone;
-
+xAdd = 0;
 
 while (s == noone) {
   var r = irandom(room_height/3 - 100);
-  if (collision_rectangle(1000, 2*room_height/3 + 0 + r, 1100, 2*room_height/3 + 100 + r + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 2*room_height/3 + 50 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 2*room_height/3 + 0 + r, 1100 + xAdd, 2*room_height/3 + 100 + r + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 2*room_height/3 + 50 + r, objShip);
   }
+  xAdd++;  
 }
 
 var tx = 525;
@@ -192,20 +200,24 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
             <kind>1</kind>
             <string>///Spawn 2 enemies
 var s = noone;
+var xAdd = 0;
+
 
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 150 + r, 1100, 250 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 200 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 150 + r, 1100 + xAdd, 250 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 200 + r, objShip);
   }
+  xAdd++;
 }
 
 s = noone;
+xAdd = 0;
 
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 350 + r, 1100, 450 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 400 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 350 + r, 1100 + xAdd, 450 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 400 + r, objShip);
   }
 }
 
@@ -241,26 +253,28 @@ while (s == noone) {
 var shipSpeed = 1.5;
 
 var s = noone;
-
+var yAdd = 0;
 
 while (s == noone) {
   var r = irandom(150);
-  if (collision_rectangle(825 + r, -100, 925 + r, 0, objEnemy, true, false) == noone) {
-    s = instance_create(875 + r, -50, objShip);
+  if (collision_rectangle(825 + r, -100 - yAdd, 925 + r, 0 - yAdd, objEnemy, true, false) == noone) {
+    s = instance_create(875 + r, -50 - yAdd, objShip);
   }
 }
 
 var tx = 525;
 var ty = irandom(room_height/2 - 200) + 00;
 scrTargetEnemy(s, tx, ty, shipSpeed);
-s = noone;
 
+s = noone;
+yAdd = 0;
 
 while (s == noone) {
   var r = irandom(150);
-  if (collision_rectangle(825 + r, room_height, 925 + r, room_height + 100, objEnemy, true, false) == noone) {
-    s = instance_create(875 + r, room_height + 50, objShip);
+  if (collision_rectangle(825 + r, room_height + yAdd, 925 + r, room_height + 100 + yAdd, objEnemy, true, false) == noone) {
+    s = instance_create(875 + r, room_height + 50 + yAdd, objShip);
   }
+  yAdd++;
 }
 
 var tx = 525;
@@ -294,30 +308,33 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
             <string>///Spawn 3 enemies
 
 var s = noone;
+var xAdd = 0;
 
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 100 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 50 + r, 1100 + xAdd, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 100 + r, objShip);
   }
 }
 
 s = noone;
-
+xAdd = 0;
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 250 + r, 1100, 350 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 300 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 250 + r, 1100 + xAdd, 350 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 300 + r, objShip);
   }
+  xAdd++;
 }
 
 s = noone;
-
+xAdd = 0;
 while (s == noone) {
   var r = irandom(100);
-  if (collision_rectangle(1000, 450 + r, 1100, 550 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 500 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 450 + r, 1100 + xAdd, 550 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 500 + r, objShip);
   }
+  xAdd++;
 }
 </string>
           </argument>
@@ -351,26 +368,28 @@ while (s == noone) {
 var shipSpeed = 1.5;
 
 var s = noone;
-
+var yAdd = 0;
 
 while (s == noone) {
   var r = irandom(150);
-  if (collision_rectangle(825 + r, -100, 925 + r, 0, objEnemy, true, false) == noone) {
-    s = instance_create(875 + r, -50, objShip);
+  if (collision_rectangle(825 + r, -100 - yAdd, 925 + r, 0 - yAdd, objEnemy, true, false) == noone) {
+    s = instance_create(875 + r, -50 - yAdd, objShip);
   }
+  yAdd++;
 }
 
 var tx = 525;
 var ty = irandom(room_height/2 - 200) + 00;
 scrTargetEnemy(s, tx, ty, shipSpeed);
 s = noone;
-
+yAdd = 0;
 
 while (s == noone) {
   var r = irandom(150);
-  if (collision_rectangle(825 + r, room_height, 925 + r, room_height + 100, objEnemy, true, false) == noone) {
-    s = instance_create(875 + r, room_height + 50, objShip);
+  if (collision_rectangle(825 + r, room_height + yAdd, 925 + r, room_height + 100 + yAdd, objEnemy, true, false) == noone) {
+    s = instance_create(875 + r, room_height + 50 + yAdd, objShip);
   }
+  yAdd++;
 }
 
 var tx = 525;
@@ -401,13 +420,14 @@ scrTargetEnemy(s, tx, ty, shipSpeed);
 var shipSpeed = 1.5;
 
 var s = noone;
-
+var xAdd = 0;
 
 while (s == noone) {
   var r = irandom(room_height/2 - 100);
-  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, 100 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, 50 + r, 1100 + xAdd, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, 100 + r, objShip);
   }
+  xAdd++;
 }
 
 
@@ -415,13 +435,14 @@ var tx = 525;
 var ty = irandom(room_height/2 - 100) + 100;
 scrTargetEnemy(s, tx, ty, shipSpeed);
 s = noone;
-
+xAdd = 0;
 
 while (s == noone) {
   var r = irandom(room_height/2 - 100);
-  if (collision_rectangle(1000, room_height/2 + 0 + r, 1100, room_height/2 + 100 + r + r, objEnemy, true, false) == noone) {
-    s = instance_create(1050, room_height/2 + 50 + r, objShip);
+  if (collision_rectangle(1000 + xAdd, room_height/2 + 0 + r, 1100 + xAdd, room_height/2 + 100 + r + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050 + xAdd, room_height/2 + 50 + r, objShip);
   }
+  xAdd++;  
 }
 
 var tx = 525;
