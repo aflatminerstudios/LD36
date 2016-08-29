@@ -8,7 +8,6 @@
     <sounds name="Music">
       <sound>sound\musAFlatJingle</sound>
       <sound>sound\musTitleScreen</sound>
-      <sound>sound\musMainGame</sound>
     </sounds>
     <sounds name="Projectiles">
       <sound>sound\sndCannonFire</sound>
@@ -107,6 +106,7 @@
       <object>objects\objStartButton</object>
       <object>objects\objCreditsButton</object>
       <object>objects\objInstructionsButton</object>
+      <object>objects\objTitleScreenExtraText</object>
     </objects>
     <objects name="Credits Screen">
       <object>objects\objCreditsControl</object>
