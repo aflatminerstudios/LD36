@@ -53,6 +53,7 @@
       <script>scripts\scrDamageTarget.gml</script>
     </scripts>
     <script>scripts\scrEndLevel.gml</script>
+    <script>scripts\scrNull.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_huge</font>
