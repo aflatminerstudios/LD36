@@ -16,9 +16,11 @@
       <sound>sound\sndTridentThrow</sound>
       <sound>sound\sndTridentHit</sound>
     </sounds>
-    <sound>sound\sndWinRound</sound>
+    <sound>sound\sndRoundBegin</sound>
     <sound>sound\sndGameOver</sound>
     <sound>sound\sndLaserFocus</sound>
+    <sound>sound\sndShipDestroyed</sound>
+    <sound>sound\sndMermanDestroyed</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprShip</sprite>
