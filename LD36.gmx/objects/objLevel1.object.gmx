@@ -53,16 +53,16 @@ lensAngle[0] = 340;
 lensRange[0] = 90;
 
 
-//Initialize mirrors (in reverse order)
+//Initialize mirrors
 mirrorX[2] = 255;
 mirrorY[2] = 102;
 mirrorAngle[2] = 270;
 mirrorRange[2] = 180;
 
 
-mirrorX[1] = 74;
+mirrorX[1] = 90;
 mirrorY[1] = 234;
-mirrorAngle[1] = 90;
+mirrorAngle[1] = 55;
 mirrorRange[1] = 180;
 
 mirrorX[0] = 82;
@@ -71,7 +71,7 @@ mirrorAngle[0] = 45;
 mirrorRange[0] = 180;
 
 
-//Initialize beams (reverse order, of course)
+//Initialize beams
 beamsX[1] = 410;
 beamsY[1] = 0;
 beamsDir[1] = 240;
@@ -80,7 +80,7 @@ beamsX[0] = 100;
 beamsY[0] = 0;
 beamsDir[0] = 265;
 
-//Initialize forts (again, reverse order)
+//Initialize forts
 fortX[4] = 395;
 fortY[4] = 75;
 fortHP[4] = 50;
@@ -102,8 +102,10 @@ fortY[0] = 670;
 fortHP[0] = 50;
 
 
-//Initialize round timelines (in reverse order)
+//Initialize round timelines
+timeline[1] = tlL1R2;
 timeline[0] = tlL1R1;
+
 </string>
           </argument>
         </arguments>

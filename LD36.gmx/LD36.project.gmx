@@ -51,6 +51,7 @@
       <script>scripts\scrShipAttack.gml</script>
       <script>scripts\scrDamageTarget.gml</script>
     </scripts>
+    <script>scripts\scrEndLevel.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_large</font>
@@ -96,6 +97,7 @@
     <object>objects\objGameOverReport</object>
   </objects>
   <timelines name="timelines">
+    <timeline>timelines\tlL1R2</timeline>
     <timeline>timelines\tlL1R1</timeline>
   </timelines>
   <rooms name="rooms">
