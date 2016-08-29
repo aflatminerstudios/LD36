@@ -22,6 +22,8 @@
     <sprite>sprites\sprStartButton</sprite>
     <sprite>sprites\sprCreditsButton</sprite>
     <sprite>sprites\sprInstructionsButton</sprite>
+    <sprite>sprites\sprCannonSmoke</sprite>
+    <sprite>sprites\sprCannonball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -37,7 +39,6 @@
       <script>scripts\scrBeamLens.gml</script>
     </scripts>
     <script>scripts\scrCalcMouseDist.gml</script>
-    <script>scripts\scrBasicAttack.gml</script>
     <script>scripts\scrCheckList.gml</script>
     <script>scripts\scrTargetEnemy.gml</script>
     <script>scripts\scrEndRound.gml</script>
@@ -45,6 +46,11 @@
     <script>scripts\scrSetupLevel.gml</script>
     <script>scripts\scrStartRound.gml</script>
     <script>scripts\scrGameOverCheck.gml</script>
+    <scripts name="Enemy Attacks">
+      <script>scripts\scrBasicAttack.gml</script>
+      <script>scripts\scrShipAttack.gml</script>
+      <script>scripts\scrDamageTarget.gml</script>
+    </scripts>
     <script>scripts\scrEndLevel.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -64,9 +70,14 @@
     <objects name="Instructions Screen">
       <object>objects\objInstructionsControl</object>
     </objects>
-    <object>objects\objEnemy</object>
-    <object>objects\objShip</object>
-    <object>objects\objExplosion</object>
+    <objects name="Enemies and Attacks">
+      <object>objects\objEnemy</object>
+      <object>objects\objShip</object>
+      <object>objects\objExplosion</object>
+      <object>objects\objCannonSmoke</object>
+      <object>objects\objProjectile</object>
+      <object>objects\objCannonball</object>
+    </objects>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">
       <object>objects\objLensHolder</object>
