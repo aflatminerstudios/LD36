@@ -6,10 +6,9 @@ with (objMasterControl) {
   
   
   if (array_length_1d(levelObjects) <= levelNum) {   
-    wonGame = true; 
-    scrGameOver();
+    alarm[2] = room_speed;
   }  else {
-    scrSetupLevel();
+    alarm[1] = room_speed;
   }
 
 }
