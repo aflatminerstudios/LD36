@@ -13,6 +13,11 @@ var pos = argument6;
 var width = argument7;
 var focusNum = argument8;
 
+
+while (dir < 0) {
+  dir += 360;
+}
+
 ///Does it hit the back of the lens?
 var diff = angle_difference(dir, lens.image_angle);
 
