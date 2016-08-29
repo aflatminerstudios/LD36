@@ -41,7 +41,7 @@ if (scrCheckList(bounceList,mirror) && !back) {
   var angleDifference = angle_difference(reverseAngle, mirror.image_angle);
   var angleOut = reverseAngle - 2*angleDifference;
   
-  newBeam.dir = angleOut;// mirror.image_angle;//dir - (sign(diff) * 90);
+  newBeam.dir = angleOut;
   newBeam.focused = focused;
   newBeam.damage = damage;
   newBeam.beamParent = mirror;

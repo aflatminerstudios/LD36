@@ -21,9 +21,15 @@
             <kind>1</kind>
             <string>///Spawn enemy
 
-var r = irandom(room_height - 200);
 
-instance_create(1050, 100 + r, objShip);
+var s = noone;
+
+while (s == noone) {
+  var r = irandom(room_height - 200);
+  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 100 + r, objShip);
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -31,7 +37,7 @@ instance_create(1050, 100 + r, objShip);
     </event>
   </entry>
   <entry>
-    <step>45</step>
+    <step>60</step>
     <event>
       <action>
         <libid>1</libid>
@@ -51,9 +57,14 @@ instance_create(1050, 100 + r, objShip);
             <kind>1</kind>
             <string>///Spawn enemy
 
-var r = irandom(room_height - 200);
+var s = noone;
 
-instance_create(1050, 100 + r, objShip);
+while (s == noone) {
+  var r = irandom(room_height - 200);
+  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 100 + r, objShip);
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -61,7 +72,7 @@ instance_create(1050, 100 + r, objShip);
     </event>
   </entry>
   <entry>
-    <step>105</step>
+    <step>210</step>
     <event>
       <action>
         <libid>1</libid>
@@ -79,61 +90,25 @@ instance_create(1050, 100 + r, objShip);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Spawn enemy
+            <string>///Spawn 2 enemies
 
-var r = irandom(room_height - 200);
+var s = noone;
 
-instance_create(1050, 100 + r, objShip);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Spawn enemy
+while (s == noone) {
+  var r = irandom(200);
+  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 100 + r, objShip);
+  }
+}
 
-var r = irandom(room_height - 200);
+s = noone;
 
-instance_create(1100, 100 + r, objShip);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Spawn enemy
-
-var r = irandom(room_height - 200);
-
-instance_create(1100, 100 + r, objShip);
+while (s == noone) {
+  var r = irandom(200);
+  if (collision_rectangle(1000, 350 + r, 1100, 450 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 400 + r, objShip);
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -141,7 +116,7 @@ instance_create(1100, 100 + r, objShip);
     </event>
   </entry>
   <entry>
-    <step>355</step>
+    <step>530</step>
     <event>
       <action>
         <libid>1</libid>
@@ -159,15 +134,43 @@ instance_create(1100, 100 + r, objShip);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Spawn enemy
+            <string>///Spawn 3 enemies
 
-var r = irandom(room_height - 200);
+var s = noone;
 
-instance_create(1100, 100 + r, objShip);
+while (s == noone) {
+  var r = irandom(100);
+  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 100 + r, objShip);
+  }
+}
+
+s = noone;
+
+while (s == noone) {
+  var r = irandom(100);
+  if (collision_rectangle(1000, 250 + r, 1100, 350 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 300 + r, objShip);
+  }
+}
+
+s = noone;
+
+while (s == noone) {
+  var r = irandom(100);
+  if (collision_rectangle(1000, 450 + r, 1100, 550 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 500 + r, objShip);
+  }
+}
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+  </entry>
+  <entry>
+    <step>780</step>
+    <event>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -184,32 +187,41 @@ instance_create(1100, 100 + r, objShip);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Spawn enemy
+            <string>///Spawn 2 enemies that move diagonally
 
-var r = irandom(room_height - 200);
+var shipSpeed = 1.5;
 
-instance_create(1050, 100 + r, objShip);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with (objMasterControl) {
+var s = noone;
+
+
+while (s == noone) {
+  var r = irandom(room_height/2 - 100);
+  if (collision_rectangle(1000, 50 + r, 1100, 150 + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, 100 + r, objShip);
+  }
+}
+
+
+var tx = 525;
+var ty = irandom(room_height/2 - 100) + 100;
+scrTargetEnemy(s, tx, ty, shipSpeed);
+s = noone;
+
+
+while (s == noone) {
+  var r = irandom(room_height/2 - 100);
+  if (collision_rectangle(1000, room_height/2 + 0 + r, 1100, room_height/2 + 100 + r + r, objEnemy, true, false) == noone) {
+    s = instance_create(1050, room_height/2 + 50 + r, objShip);
+  }
+}
+
+var tx = 525;
+var ty = irandom(room_height/2 - 100) + room_height/2 + 50;
+scrTargetEnemy(s, tx, ty, shipSpeed);
+
+
+with (objMasterControl) {
+  show_debug_message("round ending available");
   roundEnding = true;
 }
 </string>

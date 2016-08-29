@@ -36,8 +36,6 @@ roundNum = 0;
 levelNum = 0;
 
 draw_set_font(font_regular);
-
-randomize();
 </string>
           </argument>
         </arguments>
@@ -60,7 +58,7 @@ randomize();
             <kind>1</kind>
             <string>///Levels
 
-levelObjects[0] = objLevel1;
+levelObjects[0] = objLevelTest;
 
 //TEMP: set to level 1
 level = instance_create(x, y, levelObjects[levelNum]);
@@ -87,31 +85,20 @@ alarm[0] = 1;
             <kind>1</kind>
             <string>///Initialize level
 
-scrSetupLevel();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Start round
-scrStartRound();
+//scrSetupLevel();
+
+beamsX = level.beamsX;
+beamsY = level.beamsY;
+beamsDir = level.beamsDir;
+
+
+for (var i = 0; i &lt; array_length_1d(level.fortX); ++i) {
+  show_debug_message("Creating fort " + string(i));
+  var f = instance_create(level.fortX[i], level.fortY[i], objFort);
+  f.maxHP = level.fortHP[i];
+  f.currentHP = f.maxHP;
+}
+  
 </string>
           </argument>
         </arguments>

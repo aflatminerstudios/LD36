@@ -37,7 +37,6 @@ prevY = -1;
 clickedAngle = 0;
 
 changeAmount = 4;
-show_debug_message(string(self.id) + " - objHandleParent changeAmount: " + string(changeAmount));
 </string>
           </argument>
         </arguments>
@@ -97,7 +96,7 @@ if (clicked &amp;&amp; parent != noone) {
 
   var diff = angle_difference(parent.image_angle, parent.initialImageAngle);
   
-  show_debug_message("changeAmount = " + string(changeAmount));
+//  show_debug_message("changeAmount = " + string(changeAmount));
   
   if (dist &gt; 1 &amp;&amp; diff &gt; (-1 * parent.range / 2)) {
     parent.image_angle -= changeAmount;

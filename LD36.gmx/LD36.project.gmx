@@ -15,9 +15,13 @@
       <sprite>sprites\sprMirrorHolder</sprite>
       <sprite>sprites\sprLensHolder</sprite>
     </sprites>
+    <sprite>sprites\sprExplosion</sprite>
     <sprite>sprites\sprFort</sprite>
     <sprite>sprites\sprFortDestroyed</sprite>
     <sprite>sprites\sprGameOverReport</sprite>
+    <sprite>sprites\sprStartButton</sprite>
+    <sprite>sprites\sprCreditsButton</sprite>
+    <sprite>sprites\sprInstructionsButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMap</background>
@@ -35,6 +39,7 @@
     <script>scripts\scrCalcMouseDist.gml</script>
     <script>scripts\scrBasicAttack.gml</script>
     <script>scripts\scrCheckList.gml</script>
+    <script>scripts\scrTargetEnemy.gml</script>
     <script>scripts\scrEndRound.gml</script>
     <script>scripts\scrGameOver.gml</script>
     <script>scripts\scrSetupLevel.gml</script>
@@ -46,11 +51,21 @@
     <font>fonts\font_regular</font>
   </fonts>
   <objects name="objects">
+    <objects name="Title Screen">
+      <object>objects\objTitleControl</object>
+      <object>objects\objStartButton</object>
+      <object>objects\objCreditsButton</object>
+      <object>objects\objInstructionsButton</object>
+    </objects>
+    <objects name="Credits Screen">
+      <object>objects\objCreditsControl</object>
+    </objects>
+    <objects name="Instructions Screen">
+      <object>objects\objInstructionsControl</object>
+    </objects>
     <object>objects\objEnemy</object>
-    <object>objects\objTitleControl</object>
-    <object>objects\objInstructionsControl</object>
-    <object>objects\objCreditsControl</object>
     <object>objects\objShip</object>
+    <object>objects\objExplosion</object>
     <object>objects\objBeam</object>
     <objects name="LensesAndMirrors">
       <object>objects\objLensHolder</object>
@@ -63,6 +78,8 @@
     </objects>
     <object>objects\objMasterControl</object>
     <object>objects\objLevel1</object>
+    <object>objects\objTester</object>
+    <object>objects\objLevelTest</object>
     <object>objects\objFort</object>
     <object>objects\objFortDestroyed</object>
     <object>objects\objGameOverReport</object>
@@ -73,6 +90,7 @@
   <rooms name="rooms">
     <room>rooms\roomTitle</room>
     <room>rooms\roomMain</room>
+    <room>rooms\roomTest</room>
     <room>rooms\roomInstructions</room>
     <room>rooms\roomCredits</room>
   </rooms>
