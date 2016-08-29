@@ -202,7 +202,7 @@ while (s == noone) {
     </event>
   </entry>
   <entry>
-    <step>775</step>
+    <step>700</step>
     <event>
       <action>
         <libid>1</libid>
@@ -222,7 +222,7 @@ while (s == noone) {
             <kind>1</kind>
             <string>///Spawn 2 enemies that move diagonally
 
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 var s = noone;
 

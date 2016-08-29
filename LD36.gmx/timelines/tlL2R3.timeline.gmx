@@ -20,7 +20,7 @@
           <argument>
             <kind>1</kind>
             <string>///Spawn 3 diagonal-moving enemies
-var shipSpeed = 1.5;
+var shipSpeed = 1;
 
 
 var xAdd = 0;
