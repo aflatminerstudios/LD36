@@ -35,6 +35,68 @@ if (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any)) {
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw text and stuff
+
+var color = draw_get_color();
+draw_set_color(c_red);
+draw_set_halign(fa_center);
+var c = room_width / 2;
+
+
+draw_set_font(font_huge);
+draw_text(c, 0, "Credits");
+
+draw_set_color(c_white);
+draw_set_font(font_large);
+draw_text(512, 150, "Micha Faw");
+draw_text(512, 280, "Jesse Slade");
+draw_text(512, 410, "John Thrasher");
+draw_text(512, 560, "Jen Thrasher &amp; Jodi Slade");
+
+draw_set_color(c_gray);
+draw_set_font(font_regular);
+draw_text_ext(512, 215, "Transferred ideas from thought to code", -1, 900);
+draw_text_ext(512, 345, "Drew pictures and made noises", -1, 900);
+draw_text_ext(512, 475, "Tapped on the keyboard until the bugs stopped", -1, 900);
+draw_text_ext(512, 625, "Stormed some brains until the ideas came", -1, 900);
+
+draw_set_halign(fa_center);
+draw_set_color(color);
+draw_set_font(font_regular);
+
+
+/*
+
+Micha Faw - Transferred ideas from thought to code
+John Thrasher - Tapped on the keyboard until the bugs stopped
+Jesse Slade - Drew pictures and made noises
+
+
+Jen Thrasher &amp; Jodi Slade - The brains, they were a-storming, until ideas popped out
+
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
